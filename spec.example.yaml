@@ -1,0 +1,21 @@
+myconfig:
+  config:
+    workspace: Mosayc.xcworkspace
+    scheme: Mosayc
+    sdk: iphonesimulator7.1
+
+myenv:
+  env:
+    runningUnitTests: True
+    runningBehaviourTests: True
+
+mytest:
+  test:
+    target: 'Unit Test'
+    test_case: 'InviteFriendsToAlbumDataSourceTestCase'
+    env: myenv
+    config: myconfig
+
+
+
+
