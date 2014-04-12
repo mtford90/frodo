@@ -4,7 +4,6 @@ myconfig:
     scheme: Mosayc
     sdk: iphonesimulator7.1
 
-
 myenv:
   env:
     runningUnitTests: True
@@ -16,9 +15,13 @@ mytest:
     test_case: 'InviteFriendsToAlbumDataSourceTestCase'
     env: myenv
     config: myconfig
+    preconditions:
+      - myprecond
 
+frodo:
+  all_preconditions: True
+  working_dir: /Users/mtford/Playground/myc/app/Mosayc
 
-
-
-
-
+myprecond:
+  precondition:
+    cmd: 'echo hello'

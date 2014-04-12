@@ -3,8 +3,6 @@ import logging
 import os
 import subprocess
 
-import yaml
-
 
 logger = logging.getLogger('frodo')
 logger.setLevel(logging.DEBUG)
@@ -25,7 +23,6 @@ EVENT_END_TEST_SUITE = 'end-test-suite'
 EVENT_END_TEST = 'end-test'
 
 import configuration
-
 
 
 os.chdir('/Users/mtford/Playground/myc/app/Mosayc')
