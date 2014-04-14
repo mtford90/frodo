@@ -9,7 +9,7 @@ from frodo_base import FrodoBase
 Logger = logging.getLogger('frodo')
 
 
-class Test(FrodoBase):
+class FrodoTest(FrodoBase):
     """Representation of an xcode test"""
     required_attr = 'target', 'config'
 
@@ -29,7 +29,7 @@ class Test(FrodoBase):
                '-sdk {sdk} -reporter json-stream'
 
     def __init__(self, *args, **kwargs):
-        super(Test, self).__init__(*args, **kwargs)
+        super(FrodoTest, self).__init__(*args, **kwargs)
         self.relevant = []
 
     @property

@@ -1,34 +1,66 @@
 import logging
 import os
-import sys
+# import sys
 
 import yaml
 
 from errors import ConfigurationError
 
-from frodo_base import *
-from frodo_test import Test
+from frodo_env import FrodoEnv
+from frodo_precondition import FrodoPrecondition
+from frodo_test import FrodoTest
+from xctool_config import XCToolConfig
 
 
 class Configuration(object):
     default_conf_loc = 'spec.example.yaml'
     default_opts = {
-        'all_preconditions': True,
+        'all_preconditions': False,
         'working_dir': './'
+    }
+    type_maps = {
+
     }
 
     def __init__(self):
-        self.path = os.getenv('FRODO_CONF', self.default_conf_loc)
         super(Configuration, self).__init__()
-        self.environs = {}
-        self.configs = {}
-        self.tests = {}
-        self.preconditions = {}
-        self._bootstrap()
+        for k, v in self.default_opts.iteritems():
+            self.__setattr__(k, v)
+        self._items = {}
         self.init_loggers()
+        self._raw = None
 
-    def _bootstrap(self):
-        errors = self.parse()
+    def _item_lazy_access(self, key):
+        """lazy instantiation of configuration _items dict"""
+        d = self._items.get(key)
+        if not d:
+            d = {}
+            self._items[key] = d
+        return d
+
+    @property
+    def environs(self):
+        return self._item_lazy_access('environs')
+
+    @property
+    def configs(self):
+        return self._item_lazy_access('configs')
+
+    @property
+    def tests(self):
+        return self._item_lazy_access('tests')
+
+    @property
+    def preconditions(self):
+        return self._item_lazy_access('preconditions')
+
+    def load(self, raw=None):
+        if not raw:
+            path = os.getenv('FRODO_CONF', self.default_conf_loc)
+            with open(path, 'r') as f:
+                errors = self.parse(f)
+        else:
+            errors = self.parse(raw)
         if errors:
             raise ConfigurationError(errors=errors, message='Unable to parse config file')
         errors = self.resolve()
@@ -38,41 +70,42 @@ class Configuration(object):
         if errors:
             raise ConfigurationError(errors=errors, message='Config is invalid')
 
-    def parse(self):
+    def parse(self, raw_or_file):
         """Perform initial parse of yaml into native python"""
-        errors = []
-        with open(self.path) as f:
-            data = yaml.safe_load(f)
-        for name in data:
-            datum = data[name]
+        errors = {}
+        self._raw = yaml.load(raw_or_file)
+        for name in self._raw:
+            datum = self._raw[name]
             n = len(datum)
             if (not name == 'frodo') and not n == 1:
-                errors += {name: 'should only have one type'}
+                errors[name] = {'too_many_types': datum.keys()}
                 continue
             typ = datum.keys()[0]
             conf = datum[typ]
             if typ == 'env':
-                self.environs[name] = Env(name, self, **conf)
+                self.environs[name] = FrodoEnv(name, self, **conf)
             elif typ == 'config':
                 self.configs[name] = XCToolConfig(name, self, **conf)
             elif typ == 'test':
-                self.tests[name] = Test(name, self, **conf)
+                self.tests[name] = FrodoTest(name, self, **conf)
             elif typ == 'precondition':
-                self.preconditions[name] = Precondition(name, self, **conf)
+                self.preconditions[name] = FrodoPrecondition(name, self, **conf)
             elif name == 'frodo':
-                errors += self.parse_system_conf(datum)
+                frodo_errs = self.parse_system_conf(datum)
+                if frodo_errs:
+                    errors[name] = frodo_errs
             else:
-                errors += {typ: 'unknown type'}
+                errors[typ] = 'unknown type'
         return errors
 
     def parse_system_conf(self, frodo_conf):
         """best efforts at parsing frodo config"""
-        errors = []
+        errors = {}
         frodo_items = []
         try:
             frodo_items = frodo_conf.items()
         except AttributeError:
-            errors += {'frodo': '\'frodo\' config must be a dictionary'}
+            errors += 'must be a dictionary'
         finally:
             opts = dict(self.default_opts.items() + frodo_items)
             expected = set(self.default_opts.keys())
@@ -81,25 +114,28 @@ class Configuration(object):
                 if k in expected:
                     setattr(self, k, v)
             if unexpected:
-                errors += {'frodo': 'unexpected options: ' + ', '.join(unexpected)}
+                errors['unexpected_fields'] = list(unexpected)
             return errors
 
     def resolve(self):
-        """Check env and config references exist"""
-        errors = []
-        for _, test in self.tests.iteritems():
-            errors += test.resolve()
+        """resolve any references in each config item
+        e.g. map test object onto its config and env"""
+        errors = {}
+        for name, spec in self._items.iteritems():
+            assert hasattr(spec, 'resolve'), 'Does %s:%s descend from FrodoBase?' % (name, spec)
+            spec_errors = spec.resolve()
+            if spec_errors:
+                errors[name] = spec_errors
         return errors
 
     def validate(self):
         """Check for missing keys"""
-        errors = []
-        for _, spec in self.tests.iteritems():
-            errors += spec.validate()
-        for _, spec in self.configs.iteritems():
-            errors += spec.validate()
-        for _, spec in self.preconditions.iteritems():
-            errors += spec.validate()
+        errors = {}
+        for name, spec in self._items.iteritems():
+            assert hasattr(spec, 'validate'), 'Does %s:%s descend from FrodoBase?' % (name, spec)
+            spec_errors = spec.validate()
+            if spec_errors:
+                errors[name] = spec_errors
         return errors
 
     def init_loggers(self):
@@ -113,4 +149,4 @@ class Configuration(object):
         logger.addHandler(ch)
 
 
-sys.modules[__name__] = Configuration()
+        # sys.modules[__name__] = Configuration()
