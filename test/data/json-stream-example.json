@@ -1,0 +1,1246 @@
+[{
+   "name" : "test",
+   "event" : "begin-action"
+}
+,
+{
+   "event" : "begin-xcodebuild",
+   "command" : "build"
+}
+,
+{
+   "target" : "UICatalog",
+   "project" : "UICatalog",
+   "configuration" : "Debug",
+   "event" : "begin-build-target"
+}
+,
+{
+   "title" : "Check dependencies",
+   "event" : "begin-build-command",
+   "command" : "Check dependencies"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0845209956169128,
+   "title" : "Check dependencies",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Process Info.plist",
+   "event" : "begin-build-command",
+   "command" : "ProcessInfoPlistFile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Info.plist Info.plist\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-infoPlistUtility Info.plist -genpkginfo /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Info.plist\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00289201736450195,
+   "title" : "Process Info.plist",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene1.jpg",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/scene1.jpg /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene1.jpg\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/scene1.jpg /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00193601846694946,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene1.jpg",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene4.jpg",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/scene4.jpg /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene4.jpg\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/scene4.jpg /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0031539797782898,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene4.jpg",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene3.jpg",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/scene3.jpg /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene3.jpg\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/scene3.jpg /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00448399782180786,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene3.jpg",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/segment_tools.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/segment_tools.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/segment_tools.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/segment_tools.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00584197044372559,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/segment_tools.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Default.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/Default.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Default.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/Default.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00692296028137207,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Default.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene5.jpg",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/scene5.jpg /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene5.jpg\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/scene5.jpg /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00818902254104614,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene5.jpg",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene2.jpg",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/scene2.jpg /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene2.jpg\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/scene2.jpg /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00938504934310913,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/scene2.jpg",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/whiteButton.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/whiteButton.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/whiteButton.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/whiteButton.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0105180144309998,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/whiteButton.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/segment_search.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/segment_search.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/segment_search.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/segment_search.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00835800170898438,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/segment_search.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/segment_check.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/segment_check.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/segment_check.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/segment_check.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0082470178604126,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/segment_check.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/slider_ball.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/slider_ball.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/slider_ball.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/slider_ball.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00792598724365234,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/slider_ball.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/yellowslide.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/yellowslide.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/yellowslide.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/yellowslide.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00784200429916382,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/yellowslide.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/orangeslide.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/orangeslide.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/orangeslide.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/orangeslide.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00778704881668091,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/orangeslide.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/Icon.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/Icon.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00779104232788086,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/UIButton_custom.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/UIButton_custom.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/UIButton_custom.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/UIButton_custom.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00782203674316406,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/UIButton_custom.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/MainWindow.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/MainWindow.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/MainWindow.nib /Users/fpotter/Downloads/UICatalog/en.lproj/MainWindow.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "2013-04-29 10:43:28.422 Interface Builder Cocoa Touch Tool[79495:f07] CFPreferences: user home directory at file://localhost/Users/fpotter/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.",
+   "duration" : 1.6040809750557,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/MainWindow.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy en.lproj/Localizable.strings",
+   "event" : "begin-build-command",
+   "command" : "CopyStringsFile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/Localizable.strings en.lproj/Localizable.strings\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj -- en.lproj/Localizable.strings\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00826603174209595,
+   "title" : "Copy en.lproj/Localizable.strings",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/blueButton.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/blueButton.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/blueButton.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/blueButton.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00790798664093018,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/blueButton.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/12-6AM.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/12-6AM.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/12-6AM.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/12-6AM.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00807195901870728,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/12-6AM.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/6-12PM.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/6-12PM.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/6-12PM.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/6-12PM.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00791394710540771,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/6-12PM.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/6-12AM.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/6-12AM.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/6-12AM.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/6-12AM.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00779199600219727,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/6-12AM.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/12-6PM.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/12-6PM.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/12-6PM.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/12-6PM.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00765800476074219,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/12-6PM.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/PickerViewController.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/PickerViewController.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/PickerViewController.nib /Users/fpotter/Downloads/UICatalog/en.lproj/PickerViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "2013-04-29 10:43:28.427 Interface Builder Cocoa Touch Tool[79496:f07] CFPreferences: user home directory at file://localhost/Users/fpotter/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.",
+   "duration" : 1.59714901447296,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/PickerViewController.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/ButtonsViewController.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/ButtonsViewController.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/ButtonsViewController.nib /Users/fpotter/Downloads/UICatalog/en.lproj/ButtonsViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "2013-04-29 10:43:28.435 Interface Builder Cocoa Touch Tool[79494:f07] CFPreferences: user home directory at file://localhost/Users/fpotter/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.",
+   "duration" : 1.5944060087204,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/ButtonsViewController.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/ControlsViewController.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/ControlsViewController.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/ControlsViewController.nib /Users/fpotter/Downloads/UICatalog/en.lproj/ControlsViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "2013-04-29 10:43:28.454 Interface Builder Cocoa Touch Tool[79499:f07] CFPreferences: user home directory at file://localhost/Users/fpotter/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.",
+   "duration" : 1.59437602758408,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/ControlsViewController.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/TextViewController.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/TextViewController.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/TextViewController.nib /Users/fpotter/Downloads/UICatalog/en.lproj/TextViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "2013-04-29 10:43:28.477 Interface Builder Cocoa Touch Tool[79500:f07] CFPreferences: user home directory at file://localhost/Users/fpotter/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.",
+   "duration" : 1.59259498119354,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/TextViewController.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/SearchBarController.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/SearchBarController.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/SearchBarController.nib /Users/fpotter/Downloads/UICatalog/en.lproj/SearchBarController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "2013-04-29 10:43:28.450 Interface Builder Cocoa Touch Tool[79498:f07] CFPreferences: user home directory at file://localhost/Users/fpotter/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.",
+   "duration" : 1.59034502506256,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/SearchBarController.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/ImagesViewController.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/ImagesViewController.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/ImagesViewController.nib /Users/fpotter/Downloads/UICatalog/en.lproj/ImagesViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "2013-04-29 10:43:28.443 Interface Builder Cocoa Touch Tool[79497:f07] CFPreferences: user home directory at file://localhost/Users/fpotter/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.",
+   "duration" : 1.5891689658165,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/ImagesViewController.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/TextFieldController.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/TextFieldController.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/TextFieldController.nib /Users/fpotter/Downloads/UICatalog/en.lproj/TextFieldController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "2013-04-29 10:43:28.494 Interface Builder Cocoa Touch Tool[79501:f07] CFPreferences: user home directory at file://localhost/Users/fpotter/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.",
+   "duration" : 1.59312796592712,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/TextFieldController.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/ToolbarViewController.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/ToolbarViewController.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/ToolbarViewController.nib /Users/fpotter/Downloads/UICatalog/en.lproj/ToolbarViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.161886036396027,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/ToolbarViewController.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon-72.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/Icon-72.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon-72.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/Icon-72.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00300699472427368,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon-72.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/AlertsViewController.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/AlertsViewController.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/AlertsViewController.nib /Users/fpotter/Downloads/UICatalog/en.lproj/AlertsViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.02326500415802,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/AlertsViewController.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/WebViewController.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/WebViewController.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/WebViewController.nib /Users/fpotter/Downloads/UICatalog/en.lproj/WebViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0219969749450684,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/WebViewController.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/TransitionViewController.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/TransitionViewController.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/TransitionViewController.nib /Users/fpotter/Downloads/UICatalog/en.lproj/TransitionViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0521010160446167,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/TransitionViewController.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/SegmentViewController.xib",
+   "event" : "begin-build-command",
+   "command" : "CompileXIB en.lproj/SegmentViewController.xib\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..\n    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/en.lproj/SegmentViewController.nib /Users/fpotter/Downloads/UICatalog/en.lproj/SegmentViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0265380144119263,
+   "title" : "Compiling /Users/fpotter/Downloads/UICatalog/en.lproj/SegmentViewController.xib",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon-Small-50.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/Icon-Small-50.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon-Small-50.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/Icon-Small-50.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00897800922393799,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon-Small-50.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon-Small.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/Icon-Small.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon-Small.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/Icon-Small.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0100030303001404,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon-Small.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon-Small@2x.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource \"images/Icon-Small@2x.png\" \"/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon-Small@2x.png\"\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks \"/Users/fpotter/Downloads/UICatalog/images/Icon-Small@2x.png\" /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00789099931716919,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon-Small@2x.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/iTunesArtwork",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/iTunesArtwork /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/iTunesArtwork\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/iTunesArtwork /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00346499681472778,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/iTunesArtwork",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon@2x.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource \"images/Icon@2x.png\" \"/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon@2x.png\"\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks \"/Users/fpotter/Downloads/UICatalog/images/Icon@2x.png\" /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00478100776672363,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/Icon@2x.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/searchBarBackground.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/searchBarBackground.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/searchBarBackground.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/searchBarBackground.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00208300352096558,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/searchBarBackground.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/divider.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/divider.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/divider.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/divider.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00290900468826294,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/divider.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/bookmarkImage.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/bookmarkImage.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/bookmarkImage.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/bookmarkImage.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00162500143051148,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/bookmarkImage.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/bookmarkImageHighlighted.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/bookmarkImageHighlighted.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/bookmarkImageHighlighted.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/bookmarkImageHighlighted.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00184202194213867,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/bookmarkImageHighlighted.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/toolbarBackground.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/toolbarBackground.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/toolbarBackground.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/toolbarBackground.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00430703163146973,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/toolbarBackground.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/segmentedBackground.png",
+   "event" : "begin-build-command",
+   "command" : "CpResource images/segmentedBackground.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/segmentedBackground.png\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/fpotter/Downloads/UICatalog/images/segmentedBackground.png /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0091320276260376,
+   "title" : "Copy /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/segmentedBackground.png",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Precompile Prefix.pch",
+   "event" : "begin-build-command",
+   "command" : "ProcessPCH /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch.pth Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch.dia -c /Users/fpotter/Downloads/UICatalog/Prefix.pch -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch.pth -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch.d\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.232811987400055,
+   "title" : "Precompile Prefix.pch",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/main.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/main.o main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/main.dia -c /Users/fpotter/Downloads/UICatalog/main.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/main.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0232219696044922,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/main.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/AppDelegate.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/AppDelegate.o AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/AppDelegate.dia -c /Users/fpotter/Downloads/UICatalog/AppDelegate.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/AppDelegate.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0762450098991394,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/AppDelegate.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/PickerViewController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/PickerViewController.o PickerViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/PickerViewController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/PickerViewController.dia -c /Users/fpotter/Downloads/UICatalog/PickerViewController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/PickerViewController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.119478046894074,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/PickerViewController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/TextViewController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/TextViewController.o TextViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/TextViewController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/TextViewController.dia -c /Users/fpotter/Downloads/UICatalog/TextViewController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/TextViewController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0843290090560913,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/TextViewController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/WebViewController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/WebViewController.o WebViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/WebViewController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/WebViewController.dia -c /Users/fpotter/Downloads/UICatalog/WebViewController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/WebViewController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0881689786911011,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/WebViewController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/MainViewController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/MainViewController.o MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/MainViewController.dia -c /Users/fpotter/Downloads/UICatalog/MainViewController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/MainViewController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.101194977760315,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/MainViewController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/ImagesViewController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ImagesViewController.o ImagesViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ImagesViewController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ImagesViewController.dia -c /Users/fpotter/Downloads/UICatalog/ImagesViewController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ImagesViewController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0839020013809204,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/ImagesViewController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/ControlsViewController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ControlsViewController.o ControlsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ControlsViewController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ControlsViewController.dia -c /Users/fpotter/Downloads/UICatalog/ControlsViewController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ControlsViewController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.120193004608154,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/ControlsViewController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/AlertsViewController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/AlertsViewController.o AlertsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/AlertsViewController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/AlertsViewController.dia -c /Users/fpotter/Downloads/UICatalog/AlertsViewController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/AlertsViewController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.10119903087616,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/AlertsViewController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/SegmentViewController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/SegmentViewController.o SegmentViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/SegmentViewController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/SegmentViewController.dia -c /Users/fpotter/Downloads/UICatalog/SegmentViewController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/SegmentViewController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.120624005794525,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/SegmentViewController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/TextFieldController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/TextFieldController.o TextFieldController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/TextFieldController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/TextFieldController.dia -c /Users/fpotter/Downloads/UICatalog/TextFieldController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/TextFieldController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.106171011924744,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/TextFieldController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/ButtonsViewController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ButtonsViewController.o ButtonsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ButtonsViewController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ButtonsViewController.dia -c /Users/fpotter/Downloads/UICatalog/ButtonsViewController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ButtonsViewController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.107876002788544,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/ButtonsViewController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/SearchBarController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/SearchBarController.o SearchBarController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/SearchBarController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/SearchBarController.dia -c /Users/fpotter/Downloads/UICatalog/SearchBarController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/SearchBarController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0917329788208008,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/SearchBarController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/ToolbarViewController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ToolbarViewController.o ToolbarViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ToolbarViewController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ToolbarViewController.dia -c /Users/fpotter/Downloads/UICatalog/ToolbarViewController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/ToolbarViewController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.114982962608337,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/ToolbarViewController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/TransitionViewController.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/TransitionViewController.o TransitionViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/TransitionViewController.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/TransitionViewController.dia -c /Users/fpotter/Downloads/UICatalog/TransitionViewController.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/TransitionViewController.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0824349522590637,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/TransitionViewController.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/Picker/CustomView.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/CustomView.o Picker/CustomView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/CustomView.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/CustomView.dia -c /Users/fpotter/Downloads/UICatalog/Picker/CustomView.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/CustomView.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0809100270271301,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/Picker/CustomView.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/Picker/CustomPickerDataSource.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/CustomPickerDataSource.o Picker/CustomPickerDataSource.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/UICatalog-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/Prefix-elcyrarwfhydciepqasxtuxkugne/Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/CustomPickerDataSource.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/CustomPickerDataSource.dia -c /Users/fpotter/Downloads/UICatalog/Picker/CustomPickerDataSource.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/CustomPickerDataSource.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0802170038223267,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/Picker/CustomPickerDataSource.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Link /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/UICatalog",
+   "event" : "begin-build-command",
+   "command" : "Ld /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/UICatalog normal i386\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -filelist /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalog.build/Objects-normal/i386/UICatalog.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=3.2 -framework CoreFoundation -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/UICatalog\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0283589959144592,
+   "title" : "Link /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/UICatalog",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Generate /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app.dSYM",
+   "event" : "begin-build-command",
+   "command" : "GenerateDSYMFile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app.dSYM /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/UICatalog\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app/UICatalog -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app.dSYM\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0427760481834412,
+   "title" : "Generate /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app.dSYM",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Touch /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app",
+   "event" : "begin-build-command",
+   "command" : "Touch /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /usr/bin/touch -c /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00463896989822388,
+   "title" : "Touch /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalog.app",
+   "event" : "end-build-command"
+}
+,
+{
+   "target" : "UICatalog",
+   "project" : "UICatalog",
+   "configuration" : "Debug",
+   "event" : "end-build-target"
+}
+,
+{
+   "event" : "end-xcodebuild",
+   "command" : "build"
+}
+,
+{
+   "event" : "begin-xcodebuild",
+   "command" : "build"
+}
+,
+{
+   "target" : "UICatalogTests",
+   "project" : "UICatalog",
+   "configuration" : "Debug",
+   "event" : "begin-build-target"
+}
+,
+{
+   "title" : "Check dependencies",
+   "event" : "begin-build-command",
+   "command" : "Check dependencies"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0485160350799561,
+   "title" : "Check dependencies",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Process UICatalogTests/UICatalogTests-Info.plist",
+   "event" : "begin-build-command",
+   "command" : "ProcessInfoPlistFile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest/Info.plist UICatalogTests/UICatalogTests-Info.plist\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-infoPlistUtility UICatalogTests/UICatalogTests-Info.plist -expandbuildsettings -format binary -platform iphonesimulator -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest/Info.plist\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00243401527404785,
+   "title" : "Process UICatalogTests/UICatalogTests-Info.plist",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Precompile UICatalogTests/UICatalogTests-Prefix.pch",
+   "event" : "begin-build-command",
+   "command" : "ProcessPCH /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/UICatalogTests-Prefix-dsfteonpwongpzcaephyhjkqcjgo/UICatalogTests-Prefix.pch.pth UICatalogTests/UICatalogTests-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/UICatalogTests-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/UICatalogTests-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/UICatalogTests-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/UICatalogTests-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/UICatalogTests-Prefix-dsfteonpwongpzcaephyhjkqcjgo/UICatalogTests-Prefix.pch.dia -c /Users/fpotter/Downloads/UICatalog/UICatalogTests/UICatalogTests-Prefix.pch -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/UICatalogTests-Prefix-dsfteonpwongpzcaephyhjkqcjgo/UICatalogTests-Prefix.pch.pth -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/UICatalogTests-Prefix-dsfteonpwongpzcaephyhjkqcjgo/UICatalogTests-Prefix.pch.d\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.189265012741089,
+   "title" : "Precompile UICatalogTests/UICatalogTests-Prefix.pch",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/UICatalogTests/UICatalogTests.m",
+   "event" : "begin-build-command",
+   "command" : "CompileC /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/Objects-normal/i386/UICatalogTests.o UICatalogTests/UICatalogTests.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv LANG en_US.US-ASCII\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wmissing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wsign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/UICatalogTests-generated-files.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/UICatalogTests-own-target-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/UICatalogTests-all-target-headers.hmap -iquote /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/UICatalogTests-project-headers.hmap -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/DerivedSources/i386 -I/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/DerivedSources -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -include /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders/UICatalogTests-Prefix-dsfteonpwongpzcaephyhjkqcjgo/UICatalogTests-Prefix.pch -MMD -MT dependencies -MF /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/Objects-normal/i386/UICatalogTests.d --serialize-diagnostics /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/Objects-normal/i386/UICatalogTests.dia -c /Users/fpotter/Downloads/UICatalog/UICatalogTests/UICatalogTests.m -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/Objects-normal/i386/UICatalogTests.o\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0248229503631592,
+   "title" : "Compile /Users/fpotter/Downloads/UICatalog/UICatalogTests/UICatalogTests.m",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Link /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest/UICatalogTests",
+   "event" : "begin-build-command",
+   "command" : "Ld /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest/UICatalogTests normal i386\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -F/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -filelist /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/Objects-normal/i386/UICatalogTests.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.1 -framework SenTestingKit -framework UIKit -framework Foundation -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest/UICatalogTests\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.02121502161026,
+   "title" : "Link /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest/UICatalogTests",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Generate /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest.dSYM",
+   "event" : "begin-build-command",
+   "command" : "GenerateDSYMFile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest.dSYM /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest/UICatalogTests\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest/UICatalogTests -o /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest.dSYM\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.0113999843597412,
+   "title" : "Generate /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest.dSYM",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Copy UICatalogTests/en.lproj/InfoPlist.strings",
+   "event" : "begin-build-command",
+   "command" : "CopyStringsFile /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest/en.lproj/InfoPlist.strings UICatalogTests/en.lproj/InfoPlist.strings\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest/en.lproj -- UICatalogTests/en.lproj/InfoPlist.strings\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00240099430084229,
+   "title" : "Copy UICatalogTests/en.lproj/InfoPlist.strings",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Run custom shell script 'Run Script'",
+   "event" : "begin-build-command",
+   "command" : "PhaseScriptExecution \"Run Script\" /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/Script-287ECE341725DE64007EF593.sh\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv ACTION build\n    setenv ALTERNATE_GROUP staff\n    setenv ALTERNATE_MODE u+w,go-w,a+rX\n    setenv ALTERNATE_OWNER fpotter\n    setenv ALWAYS_SEARCH_USER_PATHS NO\n    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer\n    setenv APPLE_INTERNAL_DIR /AppleInternal\n    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation\n    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library\n    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools\n    setenv APPLY_RULES_IN_COPY_FILES NO\n    setenv ARCHS i386\n    setenv ARCHS_STANDARD_32_BIT i386\n    setenv ARCHS_UNIVERSAL_IPHONE_OS i386\n    setenv AVAILABLE_PLATFORMS \"iphonesimulator macosx iphoneos\"\n    setenv BUILD_COMPONENTS \"headers build\"\n    setenv BUILD_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products\n    setenv BUILD_ROOT /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products\n    setenv BUILD_STYLE \n    setenv BUILD_VARIANTS normal\n    setenv BUILT_PRODUCTS_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator\n    setenv CACHE_ROOT /var/folders/hp/cd9s5cz567s31p_lkshr83sm0000gn/C/com.apple.Xcode.501\n    setenv CCHROOT /var/folders/hp/cd9s5cz567s31p_lkshr83sm0000gn/C/com.apple.Xcode.501\n    setenv CHMOD /bin/chmod\n    setenv CHOWN /usr/sbin/chown\n    setenv CLANG_CXX_LANGUAGE_STANDARD gnu++0x\n    setenv CLANG_CXX_LIBRARY libc++\n    setenv CLANG_WARN_CONSTANT_CONVERSION YES\n    setenv CLANG_WARN_EMPTY_BODY YES\n    setenv CLANG_WARN_ENUM_CONVERSION YES\n    setenv CLANG_WARN_INT_CONVERSION YES\n    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES\n    setenv CLASS_FILE_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/JavaClasses\n    setenv CLEAN_PRECOMPS YES\n    setenv CLONE_HEADERS NO\n    setenv CODESIGNING_FOLDER_PATH /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest\n    setenv COMMAND_MODE legacy\n    setenv COMPOSITE_SDK_DIRS /var/folders/hp/cd9s5cz567s31p_lkshr83sm0000gn/C/com.apple.Xcode.501/CompositeSDKs\n    setenv COMPRESS_PNG_FILES YES\n    setenv CONFIGURATION Debug\n    setenv CONFIGURATION_BUILD_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator\n    setenv CONFIGURATION_TEMP_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator\n    setenv CONTENTS_FOLDER_PATH UICatalogTests.octest\n    setenv COPYING_PRESERVES_HFS_DATA NO\n    setenv COPY_PHASE_STRIP NO\n    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES\n    setenv CP /bin/cp\n    setenv CURRENT_ARCH i386\n    setenv CURRENT_VARIANT normal\n    setenv DEAD_CODE_STRIPPING NO\n    setenv DEBUGGING_SYMBOLS YES\n    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym\n    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0\n    setenv DEPLOYMENT_LOCATION NO\n    setenv DEPLOYMENT_POSTPROCESSING NO\n    setenv DERIVED_FILES_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/DerivedSources\n    setenv DERIVED_FILE_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/DerivedSources\n    setenv DERIVED_SOURCES_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/DerivedSources\n    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications\n    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin\n    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer\n    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks\n    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED \"\\\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\\\"\"\n    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library\n    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs\n    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools\n    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr\n    setenv DEVELOPMENT_LANGUAGE English\n    setenv DOCUMENTATION_FOLDER_PATH UICatalogTests.octest/English.lproj/Documentation\n    setenv DO_HEADER_SCANNING_IN_JAM NO\n    setenv DSTROOT /tmp/UICatalog.dst\n    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain\n    setenv DWARF_DSYM_FILE_NAME UICatalogTests.octest.dSYM\n    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO\n    setenv DWARF_DSYM_FOLDER_PATH /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator\n    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator\n    setenv ENABLE_HEADER_DEPENDENCIES YES\n    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS \".DS_Store .svn .git .hg CVS\"\n    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES \"*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj\"\n    setenv EXECUTABLES_FOLDER_PATH UICatalogTests.octest/Executables\n    setenv EXECUTABLE_FOLDER_PATH UICatalogTests.octest\n    setenv EXECUTABLE_NAME UICatalogTests\n    setenv EXECUTABLE_PATH UICatalogTests.octest/UICatalogTests\n    setenv FILE_LIST /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/Objects/LinkFileList\n    setenv FIXED_FILES_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/FixedFiles\n    setenv FRAMEWORKS_FOLDER_PATH UICatalogTests.octest/Frameworks\n    setenv FRAMEWORK_FLAG_PREFIX -framework\n    setenv FRAMEWORK_SEARCH_PATHS \"\\\"/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator\\\" \\\"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/Developer/Library/Frameworks\\\" \\\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\\\"\"\n    setenv FRAMEWORK_VERSION A\n    setenv FULL_PRODUCT_NAME UICatalogTests.octest\n    setenv GCC3_VERSION 3.3\n    setenv GCC_C_LANGUAGE_STANDARD gnu99\n    setenv GCC_DYNAMIC_NO_PIC NO\n    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES\n    setenv GCC_OBJC_LEGACY_DISPATCH YES\n    setenv GCC_OPTIMIZATION_LEVEL 0\n    setenv GCC_PFE_FILE_C_DIALECTS \"c objective-c c++ objective-c++\"\n    setenv GCC_PRECOMPILE_PREFIX_HEADER YES\n    setenv GCC_PREFIX_HEADER UICatalogTests/UICatalogTests-Prefix.pch\n    setenv GCC_PREPROCESSOR_DEFINITIONS \"DEBUG=1 \"\n    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO\n    setenv GCC_TREAT_WARNINGS_AS_ERRORS YES\n    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0\n    setenv GCC_WARN_64_TO_32_BIT_CONVERSION NO\n    setenv GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS YES\n    setenv GCC_WARN_ABOUT_MISSING_PROTOTYPES YES\n    setenv GCC_WARN_ABOUT_RETURN_TYPE YES\n    setenv GCC_WARN_CHECK_SWITCH_STATEMENTS YES\n    setenv GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED YES\n    setenv GCC_WARN_MISSING_PARENTHESES YES\n    setenv GCC_WARN_SHADOW YES\n    setenv GCC_WARN_SIGN_COMPARE YES\n    setenv GCC_WARN_TYPECHECK_CALLS_TO_PRINTF YES\n    setenv GCC_WARN_UNDECLARED_SELECTOR YES\n    setenv GCC_WARN_UNINITIALIZED_AUTOS YES\n    setenv GCC_WARN_UNUSED_FUNCTION YES\n    setenv GCC_WARN_UNUSED_LABEL YES\n    setenv GCC_WARN_UNUSED_VALUE YES\n    setenv GCC_WARN_UNUSED_VARIABLE YES\n    setenv GENERATE_MASTER_OBJECT_FILE NO\n    setenv GENERATE_PKGINFO_FILE NO\n    setenv GENERATE_PROFILING_CODE NO\n    setenv GID 20\n    setenv GROUP staff\n    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES\n    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES\n    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES\n    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES\n    setenv HEADER_SEARCH_PATHS \"\\\"/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/include\\\"  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include\"\n    setenv ICONV /usr/bin/iconv\n    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES\n    setenv INFOPLIST_FILE UICatalogTests/UICatalogTests-Info.plist\n    setenv INFOPLIST_OUTPUT_FORMAT binary\n    setenv INFOPLIST_PATH UICatalogTests.octest/Info.plist\n    setenv INFOPLIST_PREPROCESS NO\n    setenv INFOSTRINGS_PATH UICatalogTests.octest/English.lproj/InfoPlist.strings\n    setenv INSTALL_DIR /tmp/UICatalog.dst\n    setenv INSTALL_GROUP staff\n    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX\n    setenv INSTALL_OWNER fpotter\n    setenv INSTALL_ROOT /tmp/UICatalog.dst\n    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1\n    setenv JAVAC_DEFAULT_FLAGS \"-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8\"\n    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub\n    setenv JAVA_ARCHIVE_CLASSES YES\n    setenv JAVA_ARCHIVE_TYPE JAR\n    setenv JAVA_COMPILER /usr/bin/javac\n    setenv JAVA_FOLDER_PATH UICatalogTests.octest/Java\n    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources\n    setenv JAVA_JAR_FLAGS cv\n    setenv JAVA_SOURCE_SUBDIR .\n    setenv JAVA_USE_DEPENDENCIES YES\n    setenv JAVA_ZIP_FLAGS -urg\n    setenv JIKES_DEFAULT_FLAGS \"+E +OLDCSO\"\n    setenv KEEP_PRIVATE_EXTERNS NO\n    setenv LD_GENERATE_MAP_FILE NO\n    setenv LD_MAP_FILE_PATH /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/UICatalogTests-LinkMap-normal-i386.txt\n    setenv LD_NO_PIE NO\n    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer\n    setenv LEX lex\n    setenv LIBRARY_FLAG_NOSPACE YES\n    setenv LIBRARY_FLAG_PREFIX -l\n    setenv LIBRARY_SEARCH_PATHS \"\\\"/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator\\\" \"\n    setenv LINKER_DISPLAYS_MANGLED_NAMES NO\n    setenv LINK_FILE_LIST_normal_i386 /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/Objects-normal/i386/UICatalogTests.LinkFileList\n    setenv LINK_WITH_STANDARD_LIBRARIES YES\n    setenv LOCALIZED_RESOURCES_FOLDER_PATH UICatalogTests.octest/English.lproj\n    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities\n    setenv LOCAL_APPS_DIR /Applications\n    setenv LOCAL_DEVELOPER_DIR /Library/Developer\n    setenv LOCAL_LIBRARY_DIR /Library\n    setenv MACH_O_TYPE mh_bundle\n    setenv MACOSX_DEPLOYMENT_TARGET 10.6\n    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 12D78\n    setenv MAC_OS_X_VERSION_ACTUAL 1083\n    setenv MAC_OS_X_VERSION_MAJOR 1080\n    setenv MAC_OS_X_VERSION_MINOR 0803\n    setenv NATIVE_ARCH i386\n    setenv NATIVE_ARCH_32_BIT i386\n    setenv NATIVE_ARCH_64_BIT x86_64\n    setenv NATIVE_ARCH_ACTUAL x86_64\n    setenv NO_COMMON YES\n    setenv OBJC_ABI_VERSION 2\n    setenv OBJECT_FILE_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/Objects\n    setenv OBJECT_FILE_DIR_normal /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/Objects-normal\n    setenv OBJROOT /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates\n    setenv ONLY_ACTIVE_ARCH NO\n    setenv OPTIMIZATION_LEVEL 0\n    setenv OS MACOS\n    setenv OSAC /usr/bin/osacompile\n    setenv PACKAGE_TYPE com.apple.package-type.wrapper\n    setenv PASCAL_STRINGS YES\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin\"\n    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES \"/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms\"\n    setenv PBDEVELOPMENTPLIST_PATH UICatalogTests.octest/pbdevelopment.plist\n    setenv PFE_FILE_C_DIALECTS objective-c\n    setenv PKGINFO_FILE_PATH /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/PkgInfo\n    setenv PKGINFO_PATH UICatalogTests.octest/PkgInfo\n    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications\n    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin\n    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library\n    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs\n    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools\n    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr\n    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform\n    setenv PLATFORM_NAME iphonesimulator\n    setenv PLATFORM_PREFERRED_ARCH i386\n    setenv PLATFORM_PRODUCT_BUILD_VERSION 10B141\n    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 60100\n    setenv PLIST_FILE_OUTPUT_FORMAT binary\n    setenv PLUGINS_FOLDER_PATH UICatalogTests.octest/PlugIns\n    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES\n    setenv PRECOMP_DESTINATION_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/PrefixHeaders\n    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO\n    setenv PRIVATE_HEADERS_FOLDER_PATH UICatalogTests.octest/PrivateHeaders\n    setenv PRODUCT_NAME UICatalogTests\n    setenv PRODUCT_SETTINGS_PATH /Users/fpotter/Downloads/UICatalog/UICatalogTests/UICatalogTests-Info.plist\n    setenv PRODUCT_TYPE com.apple.product-type.bundle\n    setenv PROFILING_CODE NO\n    setenv PROJECT UICatalog\n    setenv PROJECT_DERIVED_FILE_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/DerivedSources\n    setenv PROJECT_DIR /Users/fpotter/Downloads/UICatalog\n    setenv PROJECT_FILE_PATH /Users/fpotter/Downloads/UICatalog/UICatalog.xcodeproj\n    setenv PROJECT_NAME UICatalog\n    setenv PROJECT_TEMP_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build\n    setenv PROJECT_TEMP_ROOT /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates\n    setenv PUBLIC_HEADERS_FOLDER_PATH UICatalogTests.octest/Headers\n    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES\n    setenv REMOVE_CVS_FROM_RESOURCES YES\n    setenv REMOVE_GIT_FROM_RESOURCES YES\n    setenv REMOVE_HG_FROM_RESOURCES YES\n    setenv REMOVE_SVN_FROM_RESOURCES YES\n    setenv REZ_COLLECTOR_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/ResourceManagerResources\n    setenv REZ_OBJECTS_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/ResourceManagerResources/Objects\n    setenv REZ_SEARCH_PATHS \"\\\"/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator\\\" \"\n    setenv RUN_CLANG_STATIC_ANALYZER NO\n    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO\n    setenv SCRIPTS_FOLDER_PATH UICatalogTests.octest/Scripts\n    setenv SCRIPT_INPUT_FILE_COUNT 0\n    setenv SCRIPT_OUTPUT_FILE_COUNT 0\n    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk\n    setenv SDK_NAME iphonesimulator6.1\n    setenv SDK_PRODUCT_BUILD_VERSION 10B141\n    setenv SED /usr/bin/sed\n    setenv SEPARATE_STRIP NO\n    setenv SEPARATE_SYMBOL_EDIT NO\n    setenv SET_DIR_MODE_OWNER_GROUP YES\n    setenv SET_FILE_MODE_OWNER_GROUP NO\n    setenv SHALLOW_BUNDLE YES\n    setenv SHARED_DERIVED_FILE_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/DerivedSources\n    setenv SHARED_FRAMEWORKS_FOLDER_PATH UICatalogTests.octest/SharedFrameworks\n    setenv SHARED_PRECOMPS_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/PrecompiledHeaders\n    setenv SHARED_SUPPORT_FOLDER_PATH UICatalogTests.octest/SharedSupport\n    setenv SKIP_INSTALL YES\n    setenv SOURCE_ROOT /Users/fpotter/Downloads/UICatalog\n    setenv SRCROOT /Users/fpotter/Downloads/UICatalog\n    setenv STRINGS_FILE_OUTPUT_ENCODING binary\n    setenv STRIP_INSTALLED_PRODUCT YES\n    setenv STRIP_STYLE non-global\n    setenv SUPPORTED_DEVICE_FAMILIES \"1 2\"\n    setenv SUPPORTED_PLATFORMS \"iphonesimulator iphoneos\"\n    setenv SYMROOT /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products\n    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities\n    setenv SYSTEM_APPS_DIR /Applications\n    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices\n    setenv SYSTEM_DEMOS_DIR /Applications/Extras\n    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications\n    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin\n    setenv SYSTEM_DEVELOPER_DEMOS_DIR \"/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples\"\n    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer\n    setenv SYSTEM_DEVELOPER_DOC_DIR \"/Applications/Xcode.app/Contents/Developer/ADC Reference Library\"\n    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR \"/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools\"\n    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR \"/Applications/Xcode.app/Contents/Developer/Applications/Java Tools\"\n    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR \"/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools\"\n    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR \"/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes\"\n    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools\n    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR \"/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools\"\n    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR \"/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools\"\n    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr\n    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities\n    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation\n    setenv SYSTEM_LIBRARY_DIR /System/Library\n    setenv TARGETED_DEVICE_FAMILY 1\n    setenv TARGETNAME UICatalogTests\n    setenv TARGET_BUILD_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator\n    setenv TARGET_NAME UICatalogTests\n    setenv TARGET_TEMP_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build\n    setenv TEMP_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build\n    setenv TEMP_FILES_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build\n    setenv TEMP_FILE_DIR /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build\n    setenv TEMP_ROOT /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates\n    setenv TEST_AFTER_BUILD NO\n    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault\n    setenv UID 501\n    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH UICatalogTests.octest\n    setenv UNSTRIPPED_PRODUCT NO\n    setenv USER fpotter\n    setenv USER_APPS_DIR /Users/fpotter/Applications\n    setenv USER_LIBRARY_DIR /Users/fpotter/Library\n    setenv USE_DYNAMIC_NO_PIC YES\n    setenv USE_HEADERMAP YES\n    setenv USE_HEADER_SYMLINKS NO\n    setenv VALIDATE_PRODUCT NO\n    setenv VALID_ARCHS i386\n    setenv VERBOSE_PBXCP NO\n    setenv VERSIONPLIST_PATH UICatalogTests.octest/version.plist\n    setenv VERSION_INFO_BUILDER fpotter\n    setenv VERSION_INFO_FILE UICatalogTests_vers.c\n    setenv VERSION_INFO_STRING \"\\\"@(#)PROGRAM:UICatalogTests  PROJECT:UICatalog-\\\"\"\n    setenv WRAPPER_EXTENSION octest\n    setenv WRAPPER_NAME UICatalogTests.octest\n    setenv WRAPPER_SUFFIX .octest\n    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode\n    setenv XCODE_PRODUCT_BUILD_VERSION 4H127\n    setenv XCODE_VERSION_ACTUAL 0460\n    setenv XCODE_VERSION_MAJOR 0400\n    setenv XCODE_VERSION_MINOR 0460\n    setenv YACC yacc\n    /bin/sh -c /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Intermediates/UICatalog.build/Debug-iphonesimulator/UICatalogTests.build/Script-287ECE341725DE64007EF593.sh\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "/Applications/Xcode.app/Contents/Developer/Tools/RunUnitTests:68: note: RunUnitTests exited without running tests because TEST_AFTER_BUILD was set to NO.\n",
+   "duration" : 0.018496036529541,
+   "title" : "Run custom shell script 'Run Script'",
+   "event" : "end-build-command"
+}
+,
+{
+   "title" : "Touch /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest",
+   "event" : "begin-build-command",
+   "command" : "Touch /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest\n    cd /Users/fpotter/Downloads/UICatalog\n    setenv PATH \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\n    /usr/bin/touch -c /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest\n"
+}
+,
+{
+   "succeeded" : true,
+   "emittedOutputText" : "",
+   "duration" : 0.00483602285385132,
+   "title" : "Touch /Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest",
+   "event" : "end-build-command"
+}
+,
+{
+   "target" : "UICatalogTests",
+   "project" : "UICatalog",
+   "configuration" : "Debug",
+   "event" : "end-build-target"
+}
+,
+{
+   "event" : "end-xcodebuild",
+   "command" : "build"
+}
+,
+{
+   "suite" : "All tests",
+   "event" : "begin-test-suite"
+}
+,
+{
+   "suite" : "/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest(Tests)",
+   "event" : "begin-test-suite"
+}
+,
+{
+   "suite" : "UICatalogTests",
+   "event" : "begin-test-suite"
+}
+,
+{
+   "test" : "-[UICatalogTests testThatThing]",
+   "event" : "begin-test"
+}
+,
+{
+   "output" : "Output from your tests will show in-line!\n",
+   "event" : "test-output"
+}
+,
+{
+   "test" : "-[UICatalogTests testThatThing]",
+   "succeeded" : true,
+   "event" : "end-test",
+   "output" : "Output from your tests will show in-line!\n",
+   "totalDuration" : 4.79817390441894e-05
+}
+,
+{
+   "test" : "-[UICatalogTests testTheOtherThing]",
+   "event" : "begin-test"
+}
+,
+{
+   "test" : "-[UICatalogTests testTheOtherThing]",
+   "succeeded" : false,
+   "exception" : {
+      "filePathInProject" : "/Users/fpotter/Downloads/UICatalog/UICatalogTests/UICatalogTests.m",
+      "name" : "SenTestFailureException",
+      "reason" : "'2' should be equal to '3': 1 + 1 should equal 2",
+      "lineNumber" : 38
+   },
+   "event" : "end-test",
+   "output" : "",
+   "totalDuration" : 8.10027122497559e-05
+}
+,
+{
+   "test" : "-[UICatalogTests testThisThing]",
+   "event" : "begin-test"
+}
+,
+{
+   "test" : "-[UICatalogTests testThisThing]",
+   "succeeded" : true,
+   "event" : "end-test",
+   "output" : "",
+   "totalDuration" : 1.19805335998535e-05
+}
+,
+{
+   "totalFailureCount" : 1,
+   "suite" : "UICatalogTests",
+   "unexpectedExceptionCount" : 0,
+   "event" : "end-test-suite",
+   "testDuration" : 0.000140964984893799,
+   "totalDuration" : 0.000285983085632324,
+   "testCaseCount" : 3
+}
+,
+{
+   "totalFailureCount" : 1,
+   "suite" : "/Users/fpotter/Library/Developer/Xcode/DerivedData/UICatalog-bszjqiuwfifzlycdqnfxdvulsrgk/Build/Products/Debug-iphonesimulator/UICatalogTests.octest(Tests)",
+   "unexpectedExceptionCount" : 0,
+   "event" : "end-test-suite",
+   "testDuration" : 0.000140964984893799,
+   "totalDuration" : 0.000330030918121338,
+   "testCaseCount" : 3
+}
+,
+{
+   "totalFailureCount" : 1,
+   "suite" : "All tests",
+   "unexpectedExceptionCount" : 0,
+   "event" : "end-test-suite",
+   "testDuration" : 0.000140964984893799,
+   "totalDuration" : 0.000424981117248535,
+   "testCaseCount" : 3
+}
+,
+{
+   "succeeded" : false,
+   "name" : "test",
+   "duration" : 4.891218543984,
+   "event" : "end-action"
+}]
