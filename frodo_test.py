@@ -12,6 +12,12 @@ class FrodoTest(FrodoBase):
 
     def __init__(self, *args, **kwargs):
         super(FrodoTest, self).__init__(*args, **kwargs)
+        self.errors = []
+        self.success = None
+
+    @property
+    def has_run(self):
+        return self.success is not None
 
     def _resolve_env(self):
         errors = []
@@ -60,4 +66,13 @@ class FrodoTest(FrodoBase):
                     except KeyError:
                         errors += [{precond_name: 'No such precondition'}]
             self._kwargs['preconditions'] = resolved_preconditions
+        return errors
+
+    def _failed_preconditions(self):
+        errors = []
+        if hasattr(self, 'preconditions'):
+            for precon in self.preconditions:
+                precon.run()
+                if not precon.succeeded:
+                    errors.append(precon)
         return errors

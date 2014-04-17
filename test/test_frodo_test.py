@@ -1,14 +1,15 @@
 import unittest
+
 from mock import MagicMock
+
 from configuration import Configuration
+from frodo_precondition import FrodoPrecondition
 from frodo_test import FrodoTest
 
 
-# noinspection PyProtectedMember
-class TestFrodoTest(unittest.TestCase):
-    def setUp(self):
-        pass
 
+# noinspection PyProtectedMember
+class TestFrodoTestResolution(unittest.TestCase):
     def test_resolve_env_success(self):
         config = Configuration()
         mock_env = MagicMock()
@@ -65,4 +66,49 @@ class TestFrodoTest(unittest.TestCase):
         config = Configuration()
         precon = FrodoTest('name', config, cmd='True', precondition='myprecond')
         self.assertTrue(precon._resolve_preconditions())
+
+
+class TestFrodoTestInit(unittest.TestCase):
+    def test_init(self):
+        test = FrodoTest('name', MagicMock())
+        self.assertFalse(test.errors)
+        self.assertFalse(test.success)
+        self.assertFalse(test.has_run)
+
+    def test_has_run(self):
+        test = FrodoTest('name', MagicMock())
+        test.success = False
+        self.assertTrue(test.has_run)
+        test.success = True
+        self.assertTrue(test.has_run)
+
+
+class TestFrodoTestPreconditionCheck(unittest.TestCase):
+    def test_success(self):
+        config = MagicMock()
+        precond = FrodoPrecondition('precon1', config, cmd='True')
+        test = FrodoTest('name', config, cmd='True')
+        setattr(test, 'preconditions', [precond])
+        self.assertFalse(test._failed_preconditions())
+
+    def test_failure(self):
+        config = MagicMock()
+        precond = FrodoPrecondition('precon1', config, cmd='False')
+        test = FrodoTest('name', config)
+        setattr(test, 'preconditions', [precond])
+        result = test._failed_preconditions()
+        self.assertTrue(result)
+        self.assertIn('precon1', [x.name for x in result])
+
+    def test_multiple_with_failure(self):
+        config = MagicMock()
+        commands = ['True', 'False', 'True', 'False']
+        preconditions \
+            = [FrodoPrecondition('precon%d' % i, config, cmd=v) for i, v in enumerate(commands)]
+        test = FrodoTest('name', config)
+        setattr(test, 'preconditions', preconditions)
+        result = test._failed_preconditions()
+        self.assertEqual(2, len(result))
+        self.assertIn('precon1', [x.name for x in result])
+        self.assertIn('precon3', [x.name for x in result])
 
