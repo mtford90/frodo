@@ -8,13 +8,13 @@ Logger = logging.getLogger('frodo')
 
 
 class FrodoTest(FrodoBase):
-    """Representation of an xcode test"""
     required_attr = 'target', 'config'
 
     def __init__(self, *args, **kwargs):
         super(FrodoTest, self).__init__(*args, **kwargs)
         self.errors = []
         self.success = None
+        self.tests = []
 
     @property
     def has_run(self):
@@ -78,6 +78,13 @@ class FrodoTest(FrodoBase):
             pass
         return env
 
+    def _run(self):
+        test = self._construct_xc_test()
+        self.tests = test.run()
+
+    def _analyse(self):
+        self.success = all(x.succeeded for x in self.tests)
+
     def _construct_xc_test(self):
         test = XCToolTest(workspace=self.config.workspace,
                           scheme=self.config.scheme,
@@ -93,7 +100,8 @@ class FrodoTest(FrodoBase):
         if failed_preconds:
             self.errors += failed_preconds
         else:
-            self._run_if_preconditions_passed()
+            self._run()
+            self._analyse()
 
     def _failed_preconditions(self):
         errors = []

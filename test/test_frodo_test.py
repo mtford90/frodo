@@ -10,6 +10,7 @@ from runner.frodo_test import FrodoTest
 
 # noinspection PyProtectedMember
 from runner.xctool_config import XCToolConfig
+from runner.xctool_test import XCToolTest
 
 
 class TestFrodoTestResolution(unittest.TestCase):
@@ -78,6 +79,7 @@ class TestFrodoTestInit(unittest.TestCase):
         self.assertFalse(test.errors)
         self.assertFalse(test.success)
         self.assertFalse(test.has_run)
+        self.assertFalse(test.tests)
 
     def test_has_run(self):
         test = FrodoTest('name', MagicMock())
@@ -92,9 +94,6 @@ class TestFrodoTestInit(unittest.TestCase):
         mock_env.as_dict = MagicMock(return_value=mock_env_as_dict)
         test = FrodoTest('name', MagicMock(), env=mock_env)
         self.assertEqual(mock_env_as_dict, test._get_env())
-
-
-
 
 
 # noinspection PyProtectedMember
@@ -129,23 +128,7 @@ class TestFrodoTestPreconditionCheck(unittest.TestCase):
 
 
 # noinspection PyProtectedMember
-class TestFrodoTestRun(unittest.TestCase):
-
-    def test_does_not_run_with_failed_preconditions(self):
-        config = MagicMock()
-        precond = FrodoPrecondition('precon1', config)
-
-        def run():
-            precond.code = 1
-            precond.stdout = ''
-            precond.stderr = ''
-
-        precond.run = MagicMock(side_effect=run)
-        test = FrodoTest('name', config)
-        setattr(test, 'preconditions', [precond])
-        test.run()
-        self.assertTrue(test.errors)
-
+class TestFrodoTestXCToolCall(unittest.TestCase):
     def test_xc_tool_call(self):
         mock_env = MagicMock(spec_set=FrodoEnv)
         mock_env_as_dict = {'ENVVAR': 'VAL'}
@@ -194,3 +177,62 @@ class TestFrodoTestRun(unittest.TestCase):
         self.assertEqual(xc_test.scheme, mock_config.scheme)
         self.assertEqual(xc_test.sdk, mock_config.sdk)
         return xc_test
+
+
+class TestFrodoTestRun(unittest.TestCase):
+    def test_does_not_run_with_failed_preconditions(self):
+        config = MagicMock()
+        precond = FrodoPrecondition('precon1', config)
+
+        def run():
+            precond.code = 1
+            precond.stdout = ''
+            precond.stderr = 'bleurgh'
+
+        precond.run = MagicMock(side_effect=run)
+        test = FrodoTest('name', config)
+        setattr(test, 'preconditions', [precond])
+        test.run()
+        self.assertTrue(test.errors)
+
+    def test_calls_run_on_xc_test_if_preconditions_pass(self):
+        config = MagicMock()
+        precond = FrodoPrecondition('precon1', config)
+
+        def run():
+            precond.code = 0
+            precond.stdout = 'awesome'
+            precond.stderr = ''
+
+        precond.run = MagicMock(side_effect=run)
+        test = FrodoTest('name', config)
+        setattr(test, 'preconditions', [precond])
+        mock_xc_test = MagicMock(spec_set=XCToolTest)
+        mock_xc_test_run = MagicMock()
+        mock_xc_test.run = mock_xc_test_run
+        test._construct_xc_test = MagicMock(return_value=mock_xc_test)
+        test.run()
+        self.assertFalse(test.errors)
+        mock_xc_test_run.assert_called_once_with()
+
+    def test_analyse_success(self):
+        config = MagicMock()
+        test = FrodoTest('name', config)
+        mock_test = MagicMock()
+        mock_test.succeeded = True
+        test.tests = [mock_test, mock_test]
+        self.assertFalse(test.success)
+        test._analyse()
+        self.assertTrue(test.success)
+
+    def test_analyse_failure(self):
+        config = MagicMock()
+        test = FrodoTest('name', config)
+        success_mock_test = MagicMock()
+        success_mock_test.succeeded = True
+        fail_mock_test = MagicMock()
+        fail_mock_test.succeeded = False
+        test.tests = [success_mock_test, fail_mock_test]
+        self.assertFalse(test.success)
+        test._analyse()
+        self.assertFalse(test.success)
