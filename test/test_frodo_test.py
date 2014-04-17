@@ -3,8 +3,8 @@ import unittest
 from mock import MagicMock
 
 from configuration import Configuration
-from frodo_precondition import FrodoPrecondition
-from frodo_test import FrodoTest
+from runner.frodo_precondition import FrodoPrecondition
+from runner.frodo_test import FrodoTest
 
 
 

@@ -1,10 +1,10 @@
 import unittest
 
 from mock import MagicMock
-from configuration import Configuration
-from frodo_env import FrodoEnv
 
-from frodo_precondition import FrodoPrecondition
+from configuration import Configuration
+from runner.frodo_env import FrodoEnv
+from runner.frodo_precondition import FrodoPrecondition
 
 
 class TestPreconditionRun(unittest.TestCase):

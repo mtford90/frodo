@@ -2,7 +2,7 @@ import unittest
 
 from mock import MagicMock
 
-from frodo_base import FrodoBase
+from runner.frodo_base import FrodoBase
 
 
 class ConcreteFrodoBase(FrodoBase):

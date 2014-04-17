@@ -1,6 +1,7 @@
 import logging
 import unittest
-from xctool_parser import XCToolParser, ParseError
+
+from runner.xctool_parser import XCToolParser, ParseError
 
 
 logger = logging.getLogger(__name__)

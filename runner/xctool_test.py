@@ -1,6 +1,8 @@
 import logging
 import subprocess
-from xctool_parser import XCToolParser
+
+from runner.xctool_parser import XCToolParser
+
 
 logger = logging.getLogger(__name__)
 

@@ -1,6 +1,8 @@
 import unittest
+
 from mock import MagicMock
-from frodo_env import FrodoEnv
+
+from runner.frodo_env import FrodoEnv
 
 
 class TestEnv(unittest.TestCase):

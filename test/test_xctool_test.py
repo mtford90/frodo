@@ -1,9 +1,8 @@
 import unittest
 
 from mock import MagicMock
-from xctool_parser import XCToolParser
 
-from xctool_test import XCToolTest, XCToolError, BuildError, RunError
+from runner.xctool_test import XCToolTest, XCToolError, BuildError, RunError
 
 
 class TestXCToolTest(unittest.TestCase):
@@ -67,6 +66,7 @@ class XCToolTestRun(unittest.TestCase):
         self.assertRaises(BuildError, test.run)
 
     def test_run_success(self):
+        """should parse stdout and return the test objects"""
         test = XCToolTest(None, None, None, None)
         test._execute = MagicMock(return_value=('', '', 0))
         mock_parser = MagicMock()

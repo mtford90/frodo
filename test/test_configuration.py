@@ -3,10 +3,10 @@ from unittest import TestCase
 from mock import MagicMock
 
 from configuration import Configuration
-from frodo_env import FrodoEnv
-from frodo_precondition import FrodoPrecondition
-from frodo_test import FrodoTest
-from xctool_config import XCToolConfig
+from runner.frodo_env import FrodoEnv
+from runner.frodo_precondition import FrodoPrecondition
+from runner.frodo_test import FrodoTest
+from runner.xctool_config import XCToolConfig
 
 
 class TestConfiguration_ParseErrors(TestCase):

@@ -1,4 +1,4 @@
-from frodo_base import FrodoBase
+from runner.frodo_base import FrodoBase
 
 
 class XCToolConfig(FrodoBase):
