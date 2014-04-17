@@ -10,12 +10,13 @@
 		C092E07A2D16CD9851B8033C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C092E891ECE9F81E8F5713E3 /* InfoPlist.strings */; };
 		C092E41A41E84F6CC6A783D5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092E90D5FC10AF675AC15D4 /* XCTest.framework */; };
 		C092E48EC7D124FE0FBADE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092E54C651204D43B6415A4 /* Foundation.framework */; };
-		C092E4DF8E0E595C43223812 /* FrodoTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C092E3B4199CC3C69A24B147 /* FrodoTestTests.m */; };
+		C092E4DF8E0E595C43223812 /* OneFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = C092E3B4199CC3C69A24B147 /* OneFailure.m */; };
 		C092E67A2EFAAAB800791F0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092E54C651204D43B6415A4 /* Foundation.framework */; };
 		C092E9B64667EBC6A911FC50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092EF80619C1EF7C4666AFD /* UIKit.framework */; };
 		C092EBDDBC53EE06AE6F9BE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C092E5D38212D5424D186B60 /* AppDelegate.m */; };
 		C092EBE05ECAEDE1BC633C01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C092EA0DBC2D33C0EE99072E /* main.m */; };
 		C092ECECADE808FD0C92B5D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C092E9078F094EBB8F7A6918 /* InfoPlist.strings */; };
+		C092EDD9CDD6C0A0CCD9E78F /* OneSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = C092E828FE370DAAAD4046B8 /* OneSuccess.m */; };
 		C092EE3454A886B49C4B7B99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092E683B9C35FC7DBCC2A6D /* CoreGraphics.framework */; };
 		C092EF4995CDCE231F4E5F7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C092EC25F24E807E3FF70FA5 /* Images.xcassets */; };
 		C092EFDFF02E0C7A310B3105 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092EF80619C1EF7C4666AFD /* UIKit.framework */; };
@@ -38,12 +39,13 @@
 		C092E228B12DC944AD3413F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C092E250E99123E4D863C7AF /* FrodoTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "FrodoTestTests-Info.plist"; sourceTree = "<group>"; };
 		C092E320CC44A7F5A3E33949 /* FrodoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrodoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C092E3B4199CC3C69A24B147 /* FrodoTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrodoTestTests.m; sourceTree = "<group>"; };
+		C092E3B4199CC3C69A24B147 /* OneFailure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneFailure.m; sourceTree = "<group>"; };
 		C092E44AECEF22A52455C5B1 /* FrodoTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrodoTest-Prefix.pch"; sourceTree = "<group>"; };
 		C092E54C651204D43B6415A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C092E5D38212D5424D186B60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C092E683B9C35FC7DBCC2A6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C092E73E1078C12704CA0972 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C092E828FE370DAAAD4046B8 /* OneSuccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneSuccess.m; sourceTree = "<group>"; };
 		C092E90D5FC10AF675AC15D4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C092E9661FB1FCCC17CD7AD9 /* FrodoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrodoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C092EA0DBC2D33C0EE99072E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,7 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				C092E575CB68FF03C2FC22F0 /* Supporting Files */,
-				C092E3B4199CC3C69A24B147 /* FrodoTestTests.m */,
+				C092E3B4199CC3C69A24B147 /* OneFailure.m */,
+				C092E828FE370DAAAD4046B8 /* OneSuccess.m */,
 			);
 			path = FrodoTestTests;
 			sourceTree = "<group>";
@@ -276,7 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C092E4DF8E0E595C43223812 /* FrodoTestTests.m in Sources */,
+				C092E4DF8E0E595C43223812 /* OneFailure.m in Sources */,
+				C092EDD9CDD6C0A0CCD9E78F /* OneSuccess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
