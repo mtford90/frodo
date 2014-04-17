@@ -5,3 +5,4 @@ notifications:
   email:
     - mtford@gmail.com
 script: nosetests
+install: "pip install -r requirements.txt"
