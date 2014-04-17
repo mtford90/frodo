@@ -1,6 +1,7 @@
 import logging
 
-from runner.frodo_base import FrodoBase
+from frodo_base import FrodoBase
+from xctool_test import XCToolTest
 
 
 Logger = logging.getLogger('frodo')
@@ -67,6 +68,32 @@ class FrodoTest(FrodoBase):
                         errors += [{precond_name: 'No such precondition'}]
             self._kwargs['preconditions'] = resolved_preconditions
         return errors
+
+    def _get_env(self):
+        """best efforts at deriving a bash environment"""
+        env = None
+        try:
+            env = self.env.as_dict()
+        except AttributeError:
+            pass
+        return env
+
+    def _construct_xc_test(self):
+        test = XCToolTest(workspace=self.config.workspace,
+                          scheme=self.config.scheme,
+                          sdk=self.config.sdk,
+                          target=self.target,
+                          test_class=getattr(self, 'test_class', None),
+                          test_method=getattr(self, 'test_method', None),
+                          env=self._get_env())
+        return test
+
+    def run(self):
+        failed_preconds = self._failed_preconditions()
+        if failed_preconds:
+            self.errors += failed_preconds
+        else:
+            self._run_if_preconditions_passed()
 
     def _failed_preconditions(self):
         errors = []

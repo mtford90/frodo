@@ -1,7 +1,7 @@
 import logging
 import subprocess
 
-from runner.frodo_base import FrodoBase
+from frodo_base import FrodoBase
 
 
 Logger = logging.getLogger('frodo')

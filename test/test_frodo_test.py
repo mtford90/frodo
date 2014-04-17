@@ -3,12 +3,15 @@ import unittest
 from mock import MagicMock
 
 from configuration import Configuration
+from runner.frodo_env import FrodoEnv
 from runner.frodo_precondition import FrodoPrecondition
 from runner.frodo_test import FrodoTest
 
 
-
 # noinspection PyProtectedMember
+from runner.xctool_config import XCToolConfig
+
+
 class TestFrodoTestResolution(unittest.TestCase):
     def test_resolve_env_success(self):
         config = Configuration()
@@ -68,6 +71,7 @@ class TestFrodoTestResolution(unittest.TestCase):
         self.assertTrue(precon._resolve_preconditions())
 
 
+# noinspection PyProtectedMember
 class TestFrodoTestInit(unittest.TestCase):
     def test_init(self):
         test = FrodoTest('name', MagicMock())
@@ -82,7 +86,18 @@ class TestFrodoTestInit(unittest.TestCase):
         test.success = True
         self.assertTrue(test.has_run)
 
+    def test_env(self):
+        mock_env = MagicMock(spec_set=FrodoEnv)
+        mock_env_as_dict = {'ENVVAR': 'VAL'}
+        mock_env.as_dict = MagicMock(return_value=mock_env_as_dict)
+        test = FrodoTest('name', MagicMock(), env=mock_env)
+        self.assertEqual(mock_env_as_dict, test._get_env())
 
+
+
+
+
+# noinspection PyProtectedMember
 class TestFrodoTestPreconditionCheck(unittest.TestCase):
     def test_success(self):
         config = MagicMock()
@@ -112,3 +127,70 @@ class TestFrodoTestPreconditionCheck(unittest.TestCase):
         self.assertIn('precon1', [x.name for x in result])
         self.assertIn('precon3', [x.name for x in result])
 
+
+# noinspection PyProtectedMember
+class TestFrodoTestRun(unittest.TestCase):
+
+    def test_does_not_run_with_failed_preconditions(self):
+        config = MagicMock()
+        precond = FrodoPrecondition('precon1', config)
+
+        def run():
+            precond.code = 1
+            precond.stdout = ''
+            precond.stderr = ''
+
+        precond.run = MagicMock(side_effect=run)
+        test = FrodoTest('name', config)
+        setattr(test, 'preconditions', [precond])
+        test.run()
+        self.assertTrue(test.errors)
+
+    def test_xc_tool_call(self):
+        mock_env = MagicMock(spec_set=FrodoEnv)
+        mock_env_as_dict = {'ENVVAR': 'VAL'}
+        mock_env.as_dict = MagicMock(return_value=mock_env_as_dict)
+        mock_configuration = MagicMock(spec_set=Configuration)
+        mock_config = MagicMock(spec=XCToolConfig)
+        mock_config.workspace = 'workspace'
+        mock_config.scheme = 'scheme'
+        mock_config.sdk = 'sdk'
+        kwargs = {
+            'env': mock_env,
+            'target': 'test-target',
+            'config': mock_config
+        }
+        xc_test = self.assertXCToolCallCorrect(kwargs, mock_config, mock_configuration)
+        self.assertFalse(xc_test.test_class)
+        self.assertFalse(xc_test.test_method)
+
+    def test_xc_tool_call_with_class_and_method(self):
+        mock_env = MagicMock(spec_set=FrodoEnv)
+        mock_env_as_dict = {'ENVVAR': 'VAL'}
+        mock_env.as_dict = MagicMock(return_value=mock_env_as_dict)
+        mock_configuration = MagicMock(spec_set=Configuration)
+        mock_config = MagicMock(spec=XCToolConfig)
+        mock_config.workspace = 'workspace'
+        mock_config.scheme = 'scheme'
+        mock_config.sdk = 'sdk'
+        kwargs = {
+            'env': mock_env,
+            'target': 'test-target',
+            'config': mock_config,
+            'test_class': 'test_class',
+            'test_method': 'test_method'
+        }
+        xc_test = self.assertXCToolCallCorrect(kwargs, mock_config, mock_configuration)
+        self.assertEqual(xc_test.test_class, 'test_class')
+        self.assertEqual(xc_test.test_method, 'test_method')
+
+    def assertXCToolCallCorrect(self, kwargs, mock_config, mock_configuration):
+        test = FrodoTest('an-awesome-test',
+                         mock_configuration,
+                         **kwargs)
+        xc_test = test._construct_xc_test()
+        self.assertEqual(xc_test.target, 'test-target')
+        self.assertEqual(xc_test.workspace, mock_config.workspace)
+        self.assertEqual(xc_test.scheme, mock_config.scheme)
+        self.assertEqual(xc_test.sdk, mock_config.sdk)
+        return xc_test

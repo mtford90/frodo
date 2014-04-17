@@ -1,4 +1,5 @@
 import unittest
+import subprocess
 
 from mock import MagicMock
 
@@ -40,14 +41,39 @@ class TestXCCoolTestOnlyParam(unittest.TestCase):
 
 
 # noinspection PyProtectedMember
-class XCToolTestBuild(unittest.TestCase):
-    def test_execute(self):
+class XCToolTestExecute(unittest.TestCase):
+    def test_io(self):
         test = XCToolTest(None, None, None, None)
         stdout, stderr, return_code = test._execute("echo 'hello stderr' >&2; echo 'hello stdout'; False")
         self.assertIn('hello stderr', stderr)
         self.assertIn('hello stdout', stdout)
         self.assertEqual(1, return_code)
 
+    def test_env(self):
+        """all subprocesses should use 'env' parameter passed via constructor"""
+        mock_process = MagicMock()
+        mock_process.communicate = MagicMock(return_value=('', ''))
+        mock_process.return_code = 0
+        mock_Popen = MagicMock(return_value=mock_process)
+        stashed_Popen = subprocess.Popen
+        subprocess.Popen = mock_Popen
+        mock_env = {'ENV_VAR': 'VAL'}
+        test = XCToolTest(None, None, None, None, env=mock_env)
+        test._execute('True')
+        try:
+            self.assertTrue(mock_Popen.call_count)
+            for args, kwargs in mock_Popen.call_args_list:
+                env = kwargs.get('env', None)
+                self.assertTrue(env)
+                self.assertDictEqual(env, mock_env)
+        except AssertionError:
+            raise
+        finally:
+            subprocess.Popen = stashed_Popen
+
+
+# noinspection PyProtectedMember
+class XCToolTestBuild(unittest.TestCase):
     def test_build_success(self):
         test = XCToolTest(None, None, None, None)
         test._execute = MagicMock(return_value=('', '', 0))

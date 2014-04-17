@@ -1,7 +1,7 @@
 import logging
 import subprocess
 
-from runner.xctool_parser import XCToolParser
+from xctool_parser import XCToolParser
 
 
 logger = logging.getLogger(__name__)
@@ -40,7 +40,7 @@ class XCToolTest(object):
                'run-tests -only "{only}" ' \
                '-sdk {sdk} -reporter json-stream'
 
-    def __init__(self, workspace, scheme, sdk, target, test_class=None, test_method=None, xctool_path=None):
+    def __init__(self, workspace, scheme, sdk, target, test_class=None, test_method=None, xctool_path=None, env=None):
         super(XCToolTest, self).__init__()
         self._xctool_path = xctool_path
         self.workspace = workspace
@@ -49,6 +49,7 @@ class XCToolTest(object):
         self.target = target
         self.test_class = test_class
         self.test_method = test_method
+        self.env = env
 
     @property
     def xctool_path(self):
@@ -82,7 +83,7 @@ class XCToolTest(object):
 
     def _execute(self, cmd):
         logger.debug("Executing '%s'" % cmd)
-        process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+        process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, env=self.env)
         stdout, stderr, return_code = process.communicate() + (process.returncode,)
         return stdout, stderr, return_code
 
