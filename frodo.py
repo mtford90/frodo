@@ -5,6 +5,7 @@ from configuration import Configuration
 from runner.runner import Runner
 
 
+
 class Frodo(object):
     def __init__(self, config_path=None):
         super(Frodo, self).__init__()

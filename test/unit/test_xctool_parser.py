@@ -1,4 +1,5 @@
 import logging
+import os
 import unittest
 
 from runner.xctool_parser import XCToolParser, ParseError
@@ -6,6 +7,7 @@ from runner.xctool_parser import XCToolParser, ParseError
 
 logger = logging.getLogger(__name__)
 
+SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 
 class TestXCToolOneFailedExample(unittest.TestCase):
     @classmethod
@@ -38,7 +40,7 @@ class TestXCToolOneFailedExample(unittest.TestCase):
         self.assertOneFailedExampleParsedCorrectly(parser)
 
     def test_parse_one_failed_example(self):
-        with open('data/../data/one_failed_example.json') as f:
+        with open(SCRIPT_DIR + '/data/../data/one_failed_example.json') as f:
             parser = XCToolParser(f)
             parser.parse()
         self.assertOneFailedExampleParsedCorrectly(parser)

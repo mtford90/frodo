@@ -1,4 +1,5 @@
 import logging
+import os
 import subprocess
 
 from xctool_parser import XCToolParser
@@ -24,7 +25,7 @@ class RunError(XCToolError):
 
 class XCToolTest(object):
     parser_class = XCToolParser
-    default_xc_tool_path = '/Users/mtford/Scripts/XCTool/build/Products/Release/xctool'
+    default_xc_tool_path = os.path.dirname(os.path.realpath(__file__)) + '/../bin/xctool'
     default_build_log_stdout = '/tmp/frodo-build.stdout.log'
     default_build_log_stderr = '/tmp/frodo-build.stderr.log'
     default_run_log_stdout = '/tmp/frodo-run.stdout.log'

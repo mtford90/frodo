@@ -95,8 +95,8 @@ class XCToolTestBuildCommand(unittest.TestCase):
     def test_scheme(self):
         self.assertIn(self.scheme, self.cmd)
 
-    def test_target(self):
-        self.assertIn(self.target, self.cmd)
+    # def test_target(self):
+    #     self.assertIn(self.target, self.cmd)
 
     # def test_test_method(self):
     #     self.assertIn(self.test_method, self.cmd)
