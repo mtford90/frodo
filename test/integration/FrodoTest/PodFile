@@ -1,0 +1,7 @@
+target 'FrodoTestTests', :exclusive => true do
+  pod 'Nocilla'
+  pod 'AGAsyncTestHelper'
+  pod 'Kiwi'
+  pod 'OCMockito'
+  pod 'OCHamcrest'
+end

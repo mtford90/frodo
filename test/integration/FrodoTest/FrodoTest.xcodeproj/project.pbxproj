@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C092E07A2D16CD9851B8033C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C092E891ECE9F81E8F5713E3 /* InfoPlist.strings */; };
+		C092E41A41E84F6CC6A783D5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092E90D5FC10AF675AC15D4 /* XCTest.framework */; };
+		C092E48EC7D124FE0FBADE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092E54C651204D43B6415A4 /* Foundation.framework */; };
+		C092E4DF8E0E595C43223812 /* FrodoTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C092E3B4199CC3C69A24B147 /* FrodoTestTests.m */; };
+		C092E67A2EFAAAB800791F0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092E54C651204D43B6415A4 /* Foundation.framework */; };
+		C092E9B64667EBC6A911FC50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092EF80619C1EF7C4666AFD /* UIKit.framework */; };
+		C092EBDDBC53EE06AE6F9BE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C092E5D38212D5424D186B60 /* AppDelegate.m */; };
+		C092EBE05ECAEDE1BC633C01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C092EA0DBC2D33C0EE99072E /* main.m */; };
+		C092ECECADE808FD0C92B5D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C092E9078F094EBB8F7A6918 /* InfoPlist.strings */; };
+		C092EE3454A886B49C4B7B99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092E683B9C35FC7DBCC2A6D /* CoreGraphics.framework */; };
+		C092EF4995CDCE231F4E5F7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C092EC25F24E807E3FF70FA5 /* Images.xcassets */; };
+		C092EFDFF02E0C7A310B3105 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092EF80619C1EF7C4666AFD /* UIKit.framework */; };
+		E03DADD4FB0C4E008006BA3D /* libPods-FrodoTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5955C8968B3A4E2497F75CD5 /* libPods-FrodoTestTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C092E2FA1A8C00894521FF6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C092E59C8A066DF155A3B422 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C092E889981C7696D3BAC948;
+			remoteInfo = FrodoTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5955C8968B3A4E2497F75CD5 /* libPods-FrodoTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrodoTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C092E0DC34BD3ACA18083577 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C092E228B12DC944AD3413F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C092E250E99123E4D863C7AF /* FrodoTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "FrodoTestTests-Info.plist"; sourceTree = "<group>"; };
+		C092E320CC44A7F5A3E33949 /* FrodoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrodoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C092E3B4199CC3C69A24B147 /* FrodoTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrodoTestTests.m; sourceTree = "<group>"; };
+		C092E44AECEF22A52455C5B1 /* FrodoTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrodoTest-Prefix.pch"; sourceTree = "<group>"; };
+		C092E54C651204D43B6415A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C092E5D38212D5424D186B60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C092E683B9C35FC7DBCC2A6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C092E73E1078C12704CA0972 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C092E90D5FC10AF675AC15D4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C092E9661FB1FCCC17CD7AD9 /* FrodoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrodoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C092EA0DBC2D33C0EE99072E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C092EC25F24E807E3FF70FA5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C092EE0AAFBE6252CFAAD557 /* FrodoTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "FrodoTest-Info.plist"; sourceTree = "<group>"; };
+		C092EF80619C1EF7C4666AFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9259D850E694CB1A24A83F1 /* Pods-FrodoTestTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrodoTestTests.xcconfig"; path = "Pods/Pods-FrodoTestTests.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C092E2610C3F117691B2DF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C092E48EC7D124FE0FBADE46 /* Foundation.framework in Frameworks */,
+				C092EE3454A886B49C4B7B99 /* CoreGraphics.framework in Frameworks */,
+				C092E9B64667EBC6A911FC50 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C092ED72DCADB20CBD024902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C092E41A41E84F6CC6A783D5 /* XCTest.framework in Frameworks */,
+				C092E67A2EFAAAB800791F0C /* Foundation.framework in Frameworks */,
+				C092EFDFF02E0C7A310B3105 /* UIKit.framework in Frameworks */,
+				E03DADD4FB0C4E008006BA3D /* libPods-FrodoTestTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C092E3C323ADA456C465BEDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C092E320CC44A7F5A3E33949 /* FrodoTest.app */,
+				C092E9661FB1FCCC17CD7AD9 /* FrodoTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C092E575CB68FF03C2FC22F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C092E250E99123E4D863C7AF /* FrodoTestTests-Info.plist */,
+				C092E891ECE9F81E8F5713E3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C092E95FE1EF17A1753747D2 = {
+			isa = PBXGroup;
+			children = (
+				C092E3C323ADA456C465BEDD /* Products */,
+				C092EDA9BE4C8C1D14D50708 /* Frameworks */,
+				C092EE1E9E68D323B2C27B68 /* FrodoTest */,
+				C092EB6582BC2D38309C34B8 /* FrodoTestTests */,
+				C9259D850E694CB1A24A83F1 /* Pods-FrodoTestTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		C092EB6582BC2D38309C34B8 /* FrodoTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				C092E575CB68FF03C2FC22F0 /* Supporting Files */,
+				C092E3B4199CC3C69A24B147 /* FrodoTestTests.m */,
+			);
+			path = FrodoTestTests;
+			sourceTree = "<group>";
+		};
+		C092EDA9BE4C8C1D14D50708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C092E54C651204D43B6415A4 /* Foundation.framework */,
+				C092E683B9C35FC7DBCC2A6D /* CoreGraphics.framework */,
+				C092EF80619C1EF7C4666AFD /* UIKit.framework */,
+				C092E90D5FC10AF675AC15D4 /* XCTest.framework */,
+				5955C8968B3A4E2497F75CD5 /* libPods-FrodoTestTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C092EE1E9E68D323B2C27B68 /* FrodoTest */ = {
+			isa = PBXGroup;
+			children = (
+				C092EF44B4E9F8D45D19856A /* Supporting Files */,
+				C092E73E1078C12704CA0972 /* AppDelegate.h */,
+				C092E5D38212D5424D186B60 /* AppDelegate.m */,
+				C092EC25F24E807E3FF70FA5 /* Images.xcassets */,
+			);
+			path = FrodoTest;
+			sourceTree = "<group>";
+		};
+		C092EF44B4E9F8D45D19856A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C092EE0AAFBE6252CFAAD557 /* FrodoTest-Info.plist */,
+				C092E9078F094EBB8F7A6918 /* InfoPlist.strings */,
+				C092EA0DBC2D33C0EE99072E /* main.m */,
+				C092E44AECEF22A52455C5B1 /* FrodoTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C092E695ADEAFF3CF65D4605 /* FrodoTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C092E47E93716A7BFC010BB2 /* Build configuration list for PBXNativeTarget "FrodoTestTests" */;
+			buildPhases = (
+				9D55817FA85543639597C08D /* Check Pods Manifest.lock */,
+				C092E88F4C86DA50275A5872 /* Sources */,
+				C092ED72DCADB20CBD024902 /* Frameworks */,
+				C092E4A9D5D09B34B74E98C9 /* Resources */,
+				DCE87BD063DD436CA3F13E47 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C092EB7353DD5F541266A96E /* PBXTargetDependency */,
+			);
+			name = FrodoTestTests;
+			productName = FrodoTestTests;
+			productReference = C092E9661FB1FCCC17CD7AD9 /* FrodoTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C092E889981C7696D3BAC948 /* FrodoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C092EAEA531D4662A594623F /* Build configuration list for PBXNativeTarget "FrodoTest" */;
+			buildPhases = (
+				C092EDD3D98A3C8D94860A28 /* Sources */,
+				C092E2610C3F117691B2DF2C /* Frameworks */,
+				C092E4254E0B737FD1C102ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrodoTest;
+			productName = FrodoTest;
+			productReference = C092E320CC44A7F5A3E33949 /* FrodoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C092E59C8A066DF155A3B422 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Frodo;
+			};
+			buildConfigurationList = C092EE4F7BE88D38C4148CF6 /* Build configuration list for PBXProject "FrodoTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C092E95FE1EF17A1753747D2;
+			productRefGroup = C092E3C323ADA456C465BEDD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+			);
+			projectRoot = "";
+			targets = (
+				C092E889981C7696D3BAC948 /* FrodoTest */,
+				C092E695ADEAFF3CF65D4605 /* FrodoTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C092E4254E0B737FD1C102ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C092ECECADE808FD0C92B5D8 /* InfoPlist.strings in Resources */,
+				C092EF4995CDCE231F4E5F7B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C092E4A9D5D09B34B74E98C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C092E07A2D16CD9851B8033C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D55817FA85543639597C08D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCE87BD063DD436CA3F13E47 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-FrodoTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C092E88F4C86DA50275A5872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C092E4DF8E0E595C43223812 /* FrodoTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C092EDD3D98A3C8D94860A28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C092EBE05ECAEDE1BC633C01 /* main.m in Sources */,
+				C092EBDDBC53EE06AE6F9BE7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C092EB7353DD5F541266A96E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C092E889981C7696D3BAC948 /* FrodoTest */;
+			targetProxy = C092E2FA1A8C00894521FF6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C092E891ECE9F81E8F5713E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C092E228B12DC944AD3413F6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C092E9078F094EBB8F7A6918 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C092E0DC34BD3ACA18083577 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C092E21F76CB3E190238181B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrodoTest/FrodoTest-Prefix.pch";
+				INFOPLIST_FILE = "FrodoTest/FrodoTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C092E4A8F5348117A9635069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C092E7528BC983878F1C94CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C092E8F18CF5C3E4617CF020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9259D850E694CB1A24A83F1 /* Pods-FrodoTestTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrodoTest/FrodoTest-Prefix.pch";
+				INFOPLIST_FILE = "FrodoTestTests/FrodoTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		C092ED370698C82FB82F0DCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9259D850E694CB1A24A83F1 /* Pods-FrodoTestTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrodoTest/FrodoTest-Prefix.pch";
+				INFOPLIST_FILE = "FrodoTestTests/FrodoTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C092EF41FDFED7EB38A092C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrodoTest/FrodoTest-Prefix.pch";
+				INFOPLIST_FILE = "FrodoTest/FrodoTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C092E47E93716A7BFC010BB2 /* Build configuration list for PBXNativeTarget "FrodoTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C092E8F18CF5C3E4617CF020 /* Release */,
+				C092ED370698C82FB82F0DCB /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C092EAEA531D4662A594623F /* Build configuration list for PBXNativeTarget "FrodoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C092EF41FDFED7EB38A092C4 /* Release */,
+				C092E21F76CB3E190238181B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C092EE4F7BE88D38C4148CF6 /* Build configuration list for PBXProject "FrodoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C092E7528BC983878F1C94CE /* Release */,
+				C092E4A8F5348117A9635069 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C092E59C8A066DF155A3B422 /* Project object */;
+}

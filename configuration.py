@@ -1,4 +1,3 @@
-import logging
 import os
 # import sys
 
@@ -27,7 +26,6 @@ class Configuration(object):
         for k, v in self.default_opts.iteritems():
             self.__setattr__(k, v)
         self._items = {}
-        self.init_loggers()
         self._raw = None
 
     def _item_lazy_access(self, key):
@@ -137,16 +135,5 @@ class Configuration(object):
             if spec_errors:
                 errors[name] = spec_errors
         return errors
-
-    def init_loggers(self):
-        logger = logging.getLogger('frodo')
-        logger.setLevel(logging.DEBUG)
-        ch = logging.StreamHandler()
-        ch.setLevel(logging.DEBUG)
-        formatter = logging.Formatter(
-            '%(asctime)-15s %(levelname)-7s %(message)s [%(funcName)s (%(filename)s:%(lineno)s)]')
-        ch.setFormatter(formatter)
-        logger.addHandler(ch)
-
 
         # sys.modules[__name__] = Configuration()
