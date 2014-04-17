@@ -119,27 +119,27 @@ class TestConfigurationParseFrodoBase(TestCase):
 class TestConfiguration_Resolve(TestCase):
     def test_calls_with_no_errors(self):
         configuration = Configuration()
-        items = {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
-                 'm3': MagicMock(spec_set=FrodoEnv)}
-        for mock in items.values():
+        items = {'env': {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
+                         'm3': MagicMock(spec_set=FrodoEnv)}}
+        for mock in items['env'].values():
             mock.resolve = MagicMock(return_value=None)
         configuration._items = items
         errors = configuration.resolve()
-        for mock in items.values():
+        for mock in items['env'].values():
             mock.resolve.assert_called_once_with()
         self.assertFalse(errors)
 
     def test_calls_with_errors(self):
         configuration = Configuration()
-        items = {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
-                 'm3': MagicMock(spec_set=FrodoEnv)}
-        items['m1'].resolve = MagicMock(return_value=None)
-        items['m2'].resolve = MagicMock(return_value=None)
+        items = {'env': {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
+                         'm3': MagicMock(spec_set=FrodoEnv)}}
+        items['env']['m1'].resolve = MagicMock(return_value=None)
+        items['env']['m2'].resolve = MagicMock(return_value=None)
         error = {'error': 'description of error'}
-        items['m3'].resolve = MagicMock(return_value=error)
+        items['env']['m3'].resolve = MagicMock(return_value=error)
         configuration._items = items
         errors = configuration.resolve()
-        for mock in items.values():
+        for mock in items['env'].values():
             mock.resolve.assert_called_once_with()
         self.assertDictEqual({'m3': error}, errors)
 
@@ -147,26 +147,26 @@ class TestConfiguration_Resolve(TestCase):
 class TestConfiguration_Validation(TestCase):
     def test_calls_with_no_errors(self):
         configuration = Configuration()
-        items = {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
-                 'm3': MagicMock(spec_set=FrodoEnv)}
-        for mock in items.values():
+        items = {'env': {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
+                         'm3': MagicMock(spec_set=FrodoEnv)}}
+        for mock in items['env'].values():
             mock.validate = MagicMock(return_value=None)
         configuration._items = items
         errors = configuration.validate()
-        for mock in items.values():
+        for mock in items['env'].values():
             mock.validate.assert_called_once_with()
         self.assertFalse(errors)
 
     def test_calls_with_errors(self):
         configuration = Configuration()
-        items = {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
-                 'm3': MagicMock(spec_set=FrodoEnv)}
-        items['m1'].validate = MagicMock(return_value=None)
-        items['m2'].validate = MagicMock(return_value=None)
+        items = {'env': {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
+                         'm3': MagicMock(spec_set=FrodoEnv)}}
+        items['env']['m1'].validate = MagicMock(return_value=None)
+        items['env']['m2'].validate = MagicMock(return_value=None)
         error = {'error': 'description of error'}
-        items['m3'].validate = MagicMock(return_value=error)
+        items['env']['m3'].validate = MagicMock(return_value=error)
         configuration._items = items
         errors = configuration.validate()
-        for mock in items.values():
+        for mock in items['env'].values():
             mock.validate.assert_called_once_with()
         self.assertDictEqual({'m3': error}, errors)

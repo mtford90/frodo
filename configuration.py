@@ -116,21 +116,23 @@ class Configuration(object):
         """resolve any references in each config item
         e.g. map test object onto its config and env"""
         errors = {}
-        for name, spec in self._items.iteritems():
-            assert hasattr(spec, 'resolve'), 'Does %s:%s descend from FrodoBase?' % (name, spec)
-            spec_errors = spec.resolve()
-            if spec_errors:
-                errors[name] = spec_errors
+        for typ, items in self._items.iteritems():
+            for name, spec in items.iteritems():
+                assert hasattr(spec, 'resolve'), 'Does %s:%s descend from FrodoBase?' % (name, spec)
+                spec_errors = spec.resolve()
+                if spec_errors:
+                    errors[name] = spec_errors
         return errors
 
     def validate(self):
         """Check for missing keys"""
         errors = {}
-        for name, spec in self._items.iteritems():
-            assert hasattr(spec, 'validate'), 'Does %s:%s descend from FrodoBase?' % (name, spec)
-            spec_errors = spec.validate()
-            if spec_errors:
-                errors[name] = spec_errors
+        for typ, items in self._items.iteritems():
+            for name, spec in items.iteritems():
+                assert hasattr(spec, 'validate'), 'Does %s:%s descend from FrodoBase?' % (name, spec)
+                spec_errors = spec.validate()
+                if spec_errors:
+                    errors[name] = spec_errors
         return errors
 
         # sys.modules[__name__] = Configuration()
