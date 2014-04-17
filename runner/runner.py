@@ -9,10 +9,18 @@ class Runner(object):
         """configuration must have passed validation and resolution"""
         super(Runner, self).__init__()
         self.configuration = configuration
+        self.frodo_tests = []
 
-    @property
-    def _reporter_class(self):
+    def _get_reporter_class(self):
         return self.default_reporter_class
 
+    def _get_reporter(self):
+        reporter_class = self._get_reporter_class()
+        reporter = reporter_class(self.configuration)
+        return reporter
+
     def run(self):
-        return {test: test.run() for test in self.configuration.tests}
+        for test in self.configuration.tests:
+            test.run()
+        reporter = self._get_reporter()
+        reporter.report()

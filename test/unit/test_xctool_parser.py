@@ -38,7 +38,7 @@ class TestXCToolOneFailedExample(unittest.TestCase):
         self.assertOneFailedExampleParsedCorrectly(parser)
 
     def test_parse_one_failed_example(self):
-        with open('data/one_failed_example.json') as f:
+        with open('data/../data/one_failed_example.json') as f:
             parser = XCToolParser(f)
             parser.parse()
         self.assertOneFailedExampleParsedCorrectly(parser)

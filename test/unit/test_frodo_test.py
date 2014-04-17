@@ -6,13 +6,10 @@ from configuration import Configuration
 from runner.frodo_env import FrodoEnv
 from runner.frodo_precondition import FrodoPrecondition
 from runner.frodo_test import FrodoTest
-
-
-# noinspection PyProtectedMember
 from runner.xctool_config import XCToolConfig
 from runner.xctool_test import XCToolTest
 
-
+# noinspection PyProtectedMember
 class TestFrodoTestResolution(unittest.TestCase):
     def test_resolve_env_success(self):
         config = Configuration()
@@ -179,6 +176,7 @@ class TestFrodoTestXCToolCall(unittest.TestCase):
         return xc_test
 
 
+# noinspection PyProtectedMember
 class TestFrodoTestRun(unittest.TestCase):
     def test_does_not_run_with_failed_preconditions(self):
         config = MagicMock()

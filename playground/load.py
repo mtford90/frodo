@@ -1,7 +1,7 @@
 import json
 
 parsed = []
-with open('../test/data/one_failed_example.json', 'r') as f:
+with open('../test/unit/data/one_failed_example.json', 'r') as f:
     for line in f:
         parsed += [json.loads(line)]
 
