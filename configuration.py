@@ -57,11 +57,11 @@ class Configuration(object):
         else:
             errors = self.parse(raw)
         if errors:
-            raise ConfigurationError(errors=errors, message='Unable to parse config file')
-        errors = self.resolve()
-        if errors:
             raise ConfigurationError(errors=errors, message='Resolution error')
         errors = self.validate()
+        if errors:
+            raise ConfigurationError(errors=errors, message='Unable to parse config file due to errors: %s' % errors)
+        errors = self.resolve()
         if errors:
             raise ConfigurationError(errors=errors, message='Config is invalid')
 

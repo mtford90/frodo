@@ -34,11 +34,11 @@ class XCToolTest(object):
                       '-scheme {scheme} ' \
                       'build-tests'
 
-    bash_cmd = '{xctool_path} ' \
-               '-workspace {workspace} ' \
-               '-scheme {scheme} ' \
-               'run-tests -only "{only}" ' \
-               '-sdk {sdk} -reporter json-stream'
+    run_tests_cmd = '{xctool_path} ' \
+                    '-workspace {workspace} ' \
+                    '-scheme {scheme} ' \
+                    'run-tests -only "{only}" ' \
+                    '-sdk {sdk} -reporter json-stream'
 
     def __init__(self, workspace, scheme, sdk, target, test_class=None, test_method=None, xctool_path=None, env=None):
         super(XCToolTest, self).__init__()
@@ -87,24 +87,29 @@ class XCToolTest(object):
         stdout, stderr, return_code = process.communicate() + (process.returncode,)
         return stdout, stderr, return_code
 
-    def _build(self):
-        build_cmd = self.build_tests_cmd.format(xctool_path=self._xctool_path,
+    def _construct_build_cmd(self):
+        build_cmd = self.build_tests_cmd.format(xctool_path=self.xctool_path,
                                                 workspace=self.workspace,
                                                 scheme=self.scheme)
+        return build_cmd
+
+    def _build(self):
+        build_cmd = self._construct_build_cmd()
         stdout, stderr, return_code = self._execute(build_cmd)
         # test_cmd = self.bash_cmd.format(xctool=self.default_xc_tool,
         stdout_log = self.log_path_build_stdout
-        logger.info('Writing %s' % stdout_log)
+        logger.debug('Writing %s' % stdout_log)
         with open(stdout_log, 'w') as f:
             f.write(stdout)
         stderr_log = self.log_path_build_stderr
-        logger.info('Writing %s' % stderr_log)
+        logger.debug('Writing %s' % stderr_log)
         with open(stderr_log, 'w') as f:
             f.write(stderr)
         if return_code:
-            logger.fatal('Build failed with exit code %d. See %s and %s for more details.' % (
-                return_code, stdout_log, stderr_log))
-            raise BuildError()
+            excp_msg = 'Build failed with exit code %d' % return_code
+            logger.fatal((excp_msg + '. See %s and %s for more details.') % (
+                stdout_log, stderr_log))
+            raise BuildError(excp_msg)
         else:
             logger.info('Build successful')
 
@@ -120,23 +125,27 @@ class XCToolTest(object):
         parser.parse()
         return parser.tests
 
+    def _construct_run_cmd(self):
+        bash_cmd = self.run_tests_cmd.format(xctool_path=self.xctool_path,
+                                             workspace=self.workspace,
+                                             scheme=self.scheme,
+                                             only=self._construct_only(),
+                                             sdk=self.sdk)
+        return bash_cmd
+
     def run(self):
         self._build()
-        bash_cmd = self.bash_cmd.format(xctool_path=self.xctool_path,
-                                        workspace=self.workspace,
-                                        scheme=self.scheme,
-                                        only=self._construct_only(),
-                                        sdk=self.sdk)
+        bash_cmd = self._construct_run_cmd()
         stdout, stderr, return_code = self._execute(bash_cmd)
         stdout_log = self.default_run_log_stdout
-        stderr_log = self.default_build_log_stdout
-        logger.info('Writing %s' % stdout_log)
+        stderr_log = self.default_run_log_stderr
+        logger.debug('Writing %s' % stdout_log)
         with open(stdout_log, 'w') as f:
             f.write(stdout)
-        logger.info('Writing %s' % stderr_log)
+        logger.debug('Writing %s' % stderr_log)
         with open(stderr_log, 'w') as f:
             f.write(stderr)
-        if return_code:
+        if return_code > 1:
             logger.fatal('Testing failed with exit code %d. See %s and %s for more details.' % (
                 return_code, stdout_log, stderr_log))
             raise RunError()

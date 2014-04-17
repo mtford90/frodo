@@ -20,7 +20,7 @@ class TestRunner(unittest.TestCase):
         test_2.name = 'test_2'
         test_2.run = MagicMock()
         configuration = MagicMock()
-        configuration.tests = [test_1, test_2]
+        configuration.tests = {test_1.name: test_1, test_2.name: test_2}
         runner = Runner(configuration)
         mock_reporter = MagicMock()
         mock_reporter.report = MagicMock()

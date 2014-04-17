@@ -1,10 +1,11 @@
 import logging
+import os
 
 from frodo_base import FrodoBase
 from xctool_test import XCToolTest
 
 
-Logger = logging.getLogger('frodo')
+Logger = logging.getLogger(__name__)
 
 
 class FrodoTest(FrodoBase):
@@ -80,6 +81,9 @@ class FrodoTest(FrodoBase):
 
     def _run(self):
         test = self._construct_xc_test()
+        wd = self.configuration.working_dir
+        Logger.info('Changing to \'%s\'' % wd)
+        os.chdir(wd)
         self.tests = test.run()
 
     def _analyse(self):

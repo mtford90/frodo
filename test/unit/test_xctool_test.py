@@ -73,6 +73,39 @@ class XCToolTestExecute(unittest.TestCase):
 
 
 # noinspection PyProtectedMember
+class XCToolTestBuildCommand(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.workspace = 'workspace'
+        cls.scheme = 'scheme'
+        cls.target = 'target'
+        cls.test_method = 'test_method'
+        cls.test_class = 'test_class'
+        test = XCToolTest(workspace=cls.workspace,
+                          scheme=cls.scheme,
+                          target=cls.target,
+                          sdk='something',
+                          test_method=cls.test_method,
+                          test_class=cls.test_class)
+        cls.cmd = test._construct_build_cmd()
+
+    def test_workspace(self):
+        self.assertIn(self.workspace, self.cmd)
+
+    def test_scheme(self):
+        self.assertIn(self.scheme, self.cmd)
+
+    def test_target(self):
+        self.assertIn(self.target, self.cmd)
+
+    # def test_test_method(self):
+    #     self.assertIn(self.test_method, self.cmd)
+    #
+    # def test_test_class(self):
+    #     self.assertIn(self.test_class, self.cmd)
+
+
+# noinspection PyProtectedMember
 class XCToolTestBuild(unittest.TestCase):
     def test_build_success(self):
         test = XCToolTest(None, None, None, None)
@@ -91,19 +124,26 @@ class XCToolTestRun(unittest.TestCase):
         test._build = MagicMock(side_effect=BuildError)
         self.assertRaises(BuildError, test.run)
 
-    def test_run_success(self):
-        """should parse stdout and return the test objects"""
+    def _test_run_success(self, code):
         test = XCToolTest(None, None, None, None)
-        test._execute = MagicMock(return_value=('', '', 0))
+        test._execute = MagicMock(return_value=('', '', code))
+        test._build = MagicMock()
         mock_parser = MagicMock()
         dummy_tests = ['dummy', 'test', 'results']
         mock_parser.tests = dummy_tests
         test._get_parser = MagicMock(return_value=mock_parser)
         self.assertEqual(dummy_tests, test.run())
 
+    def test_run_success(self):
+        """should parse stdout and return the test objects"""
+        self._test_run_success(0)
+
+    def test_run_success_1(self):
+        self._test_run_success(1)
+
     def test_run_failure(self):
         test = XCToolTest(None, None, None, None)
-        test._execute = MagicMock(return_value=('', '', 1))
+        test._execute = MagicMock(return_value=('', '', 2))
         test._build = MagicMock()
         self.assertRaises(RunError, test.run)
 

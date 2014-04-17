@@ -1,6 +1,7 @@
+import os
 import unittest
 
-from mock import MagicMock
+from mock import MagicMock, call
 
 from configuration import Configuration
 from runner.frodo_env import FrodoEnv
@@ -194,8 +195,10 @@ class TestFrodoTestRun(unittest.TestCase):
         self.assertTrue(test.errors)
 
     def test_calls_run_on_xc_test_if_preconditions_pass(self):
-        config = MagicMock()
-        precond = FrodoPrecondition('precon1', config)
+        configuration = MagicMock()
+        mock_working_dir = 'mock_wd'
+        configuration.working_dir = mock_working_dir
+        precond = FrodoPrecondition('precon1', configuration)
 
         def run():
             precond.code = 0
@@ -203,15 +206,23 @@ class TestFrodoTestRun(unittest.TestCase):
             precond.stderr = ''
 
         precond.run = MagicMock(side_effect=run)
-        test = FrodoTest('name', config)
+        test = FrodoTest('name', configuration)
         setattr(test, 'preconditions', [precond])
         mock_xc_test = MagicMock(spec_set=XCToolTest)
-        mock_xc_test_run = MagicMock()
-        mock_xc_test.run = mock_xc_test_run
+        magic_mock = MagicMock()
+        mock_xc_test.run = magic_mock
         test._construct_xc_test = MagicMock(return_value=mock_xc_test)
-        test.run()
-        self.assertFalse(test.errors)
-        mock_xc_test_run.assert_called_once_with()
+        stashed_ch_dir = os.chdir
+        os.chdir = magic_mock
+        try:
+            test.run()
+            self.assertFalse(test.errors)
+            # Change we change directory
+            magic_mock.assert_has_calls([call(mock_working_dir), call()], any_order=False)
+        except AssertionError:
+            raise
+        finally:
+            os.chdir = stashed_ch_dir
 
     def test_analyse_success(self):
         config = MagicMock()

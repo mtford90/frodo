@@ -20,7 +20,7 @@ class Runner(object):
         return reporter
 
     def run(self):
-        for test in self.configuration.tests:
+        for test_name, test in self.configuration.tests.iteritems():
             test.run()
         reporter = self._get_reporter()
         reporter.report()
