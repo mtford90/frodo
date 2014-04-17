@@ -13,6 +13,7 @@ class FrodoEnv(FrodoBase):
             bash_env_str += '%s="%s" ' % (k, v)
         return bash_env_str.strip()
 
+    # TODO: This could probs be implemented as special methods: __iter__, __getattr__ etc
     def as_dict(self):
         """Same as super, but ensure all values are strings"""
         d = super(FrodoEnv, self).as_dict()

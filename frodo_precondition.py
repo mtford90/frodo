@@ -28,6 +28,22 @@ class FrodoPrecondition(FrodoBase):
         assert not self.executed, 'Precondition has already run'
         if Logger.isEnabledFor(logging.DEBUG):
             Logger.debug("Executing: '%s'" % self.cmd)
-        process = subprocess.Popen(self.cmd, stdout=subprocess.PIPE, shell=True)
+        env = None
+        try:
+            env = self.env.as_dict()
+        except AttributeError:
+            pass
+        process = subprocess.Popen(self.cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, env=env)
         self.stdout, self.stderr = process.communicate()
         self.code = process.returncode
+
+    def resolve(self):
+        errors = []
+        if 'env' in self._kwargs:
+            env_name = self.env
+            try:
+                # noinspection PyAttributeOutsideInit
+                self._kwargs['env'] = self.configuration.environs[env_name]
+            except KeyError:
+                errors += {env_name: 'env declaration doesnt exist'}
+        return errors
