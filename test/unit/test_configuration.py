@@ -9,13 +9,24 @@ from runner.frodo_test import FrodoTest
 from runner.xctool_config import XCToolConfig
 
 
-class TestConfiguration_ParseErrors(TestCase):
+class TestConfiguration(TestCase):
     # noinspection PyUnresolvedReferences
     def test_defaults(self):
         configuration = Configuration()
         self.assertFalse(configuration.all_preconditions)
         self.assertEqual(configuration.working_dir, './')
 
+    def test_default_config_path(self):
+        configuration = Configuration()
+        self.assertEquals(configuration.config_path, configuration.default_config_path)
+
+    def test_config_path(self):
+        mock_path = 'dfdsf'
+        configuration = Configuration(mock_path)
+        self.assertEquals(configuration.config_path, mock_path)
+
+
+class TestConfiguration_ParseErrors(TestCase):
     def test_too_many_types(self):
         raw = '''
                myenv:
@@ -106,7 +117,6 @@ class TestConfigurationParseFrodoBase(TestCase):
 
 
 class TestConfiguration_Resolve(TestCase):
-
     def test_calls_with_no_errors(self):
         configuration = Configuration()
         items = {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
@@ -135,7 +145,6 @@ class TestConfiguration_Resolve(TestCase):
 
 
 class TestConfiguration_Validation(TestCase):
-
     def test_calls_with_no_errors(self):
         configuration = Configuration()
         items = {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),

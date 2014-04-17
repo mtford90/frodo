@@ -1,6 +1,3 @@
-import os
-# import sys
-
 import yaml
 
 from runner.frodo_env import FrodoEnv
@@ -10,21 +7,19 @@ from runner.xctool_config import XCToolConfig
 
 
 class Configuration(object):
-    default_conf_loc = 'spec.example.yaml'
+    default_config_path = './spec.yaml'
     default_opts = {
         'all_preconditions': False,
         'working_dir': './'
     }
-    type_maps = {
 
-    }
-
-    def __init__(self):
+    def __init__(self, config_path=None):
         super(Configuration, self).__init__()
         for k, v in self.default_opts.iteritems():
             self.__setattr__(k, v)
         self._items = {}
         self._raw = None
+        self._config_path = config_path
 
     def _item_lazy_access(self, key):
         """lazy instantiation of configuration _items dict"""
@@ -33,6 +28,10 @@ class Configuration(object):
             d = {}
             self._items[key] = d
         return d
+
+    @property
+    def config_path(self):
+        return self._config_path or self.default_config_path
 
     @property
     def environs(self):
@@ -52,7 +51,7 @@ class Configuration(object):
 
     def load(self, raw=None):
         if not raw:
-            path = os.getenv('FRODO_CONF', self.default_conf_loc)
+            path = self.config_path
             with open(path, 'r') as f:
                 errors = self.parse(f)
         else:
