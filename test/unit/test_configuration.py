@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from mock import MagicMock
+from mock import MagicMock, NonCallableMock, Mock
 
 from configuration import Configuration
 from runner.frodo_env import FrodoEnv
@@ -119,24 +119,25 @@ class TestConfigurationParseFrodoBase(TestCase):
 class TestConfiguration_Resolve(TestCase):
     def test_calls_with_no_errors(self):
         configuration = Configuration()
-        items = {'env': {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
-                         'm3': MagicMock(spec_set=FrodoEnv)}}
-        for mock in items['env'].values():
-            mock.resolve = MagicMock(return_value=None)
+        mock_env = NonCallableMock(spec_set=['resolve'])
+        mock_env.resolve = Mock(return_value=None)
+        items = {'env': {'m1': mock_env, 'm2': mock_env,
+                         'm3': mock_env}}
         configuration._items = items
         errors = configuration.resolve()
-        for mock in items['env'].values():
-            mock.resolve.assert_called_once_with()
+        self.assertEqual(3, mock_env.resolve.call_count)
         self.assertFalse(errors)
 
     def test_calls_with_errors(self):
         configuration = Configuration()
-        items = {'env': {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
-                         'm3': MagicMock(spec_set=FrodoEnv)}}
-        items['env']['m1'].resolve = MagicMock(return_value=None)
-        items['env']['m2'].resolve = MagicMock(return_value=None)
         error = {'error': 'description of error'}
-        items['env']['m3'].resolve = MagicMock(return_value=error)
+        items = {
+            'env': {
+                'm1': NonCallableMock(spec_set=['resolve'], resolve=Mock(return_value=None)),
+                'm2': NonCallableMock(spec_set=['resolve'], resolve=Mock(return_value=None)),
+                'm3': NonCallableMock(spec_set=['resolve'], resolve=Mock(return_value=error))
+            }
+        }
         configuration._items = items
         errors = configuration.resolve()
         for mock in items['env'].values():
@@ -147,24 +148,25 @@ class TestConfiguration_Resolve(TestCase):
 class TestConfiguration_Validation(TestCase):
     def test_calls_with_no_errors(self):
         configuration = Configuration()
-        items = {'env': {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
-                         'm3': MagicMock(spec_set=FrodoEnv)}}
-        for mock in items['env'].values():
-            mock.validate = MagicMock(return_value=None)
+        mock_env = NonCallableMock(spec_set=['validate'])
+        mock_env.validate = Mock(return_value=None)
+        items = {'env': {'m1': mock_env, 'm2': mock_env,
+                         'm3': mock_env}}
         configuration._items = items
         errors = configuration.validate()
-        for mock in items['env'].values():
-            mock.validate.assert_called_once_with()
+        self.assertEqual(3, mock_env.validate.call_count)
         self.assertFalse(errors)
 
     def test_calls_with_errors(self):
         configuration = Configuration()
-        items = {'env': {'m1': MagicMock(spec_set=FrodoEnv), 'm2': MagicMock(spec_set=FrodoEnv),
-                         'm3': MagicMock(spec_set=FrodoEnv)}}
-        items['env']['m1'].validate = MagicMock(return_value=None)
-        items['env']['m2'].validate = MagicMock(return_value=None)
         error = {'error': 'description of error'}
-        items['env']['m3'].validate = MagicMock(return_value=error)
+        items = {
+            'env': {
+                'm1': NonCallableMock(spec_set=['validate'], validate=Mock(return_value=None)),
+                'm2': NonCallableMock(spec_set=['validate'], validate=Mock(return_value=None)),
+                'm3': NonCallableMock(spec_set=['validate'], validate=Mock(return_value=error))
+            }
+        }
         configuration._items = items
         errors = configuration.validate()
         for mock in items['env'].values():
