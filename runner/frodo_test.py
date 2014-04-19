@@ -1,5 +1,7 @@
 import logging
 import os
+import shutil
+import errno
 
 from frodo_base import FrodoBase
 from xctool_test import XCToolTest
@@ -10,6 +12,8 @@ Logger = logging.getLogger(__name__)
 
 class FrodoTest(FrodoBase):
     required_attr = 'target', 'config'
+
+    tmp_dir_name = '.frodo'
 
     def __init__(self, *args, **kwargs):
         super(FrodoTest, self).__init__(*args, **kwargs)
@@ -79,11 +83,21 @@ class FrodoTest(FrodoBase):
             pass
         return env
 
-    def _run(self):
-        test = self._construct_xc_test()
+    def _mk_tmp_dir(self):
+        try:
+            os.makedirs(self.configuration.working_dir + '/' + self.tmp_dir_name)
+        except OSError as exception:
+            if exception.errno != errno.EEXIST:
+                raise
+
+    def _change_to_working_dir(self):
         wd = self.configuration.working_dir
         Logger.info('Changing to \'%s\'' % wd)
         os.chdir(wd)
+
+    def _run(self):
+        test = self._construct_xc_test()
+        self._change_to_working_dir()
         self.tests = test.run()
 
     def _analyse(self):
