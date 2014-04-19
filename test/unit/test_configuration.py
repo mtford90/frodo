@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from mock import MagicMock, NonCallableMock, Mock
+from mock import NonCallableMock, Mock
 
 from configuration import Configuration
 from runner.frodo_env import FrodoEnv

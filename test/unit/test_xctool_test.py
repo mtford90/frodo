@@ -1,6 +1,6 @@
 import unittest
 
-from mock import MagicMock, patch, Mock, NonCallableMock
+from mock import patch, Mock, NonCallableMock
 
 from runner.xctool_test import XCToolTest, XCToolError, BuildError, RunError
 
@@ -50,9 +50,9 @@ class XCToolTestExecute(unittest.TestCase):
 
     def test_env(self):
         """all subprocesses should use 'env' parameter passed via constructor"""
-        mock_process = MagicMock()
-        mock_process.communicate = MagicMock(return_value=('', ''))
-        mock_process.return_code = 0
+        mock_process = Mock(spec_set=['communicate', 'returncode'])
+        mock_process.communicate = Mock(return_value=('', ''))
+        mock_process.returncode = 0
         with patch('subprocess.Popen', return_value=mock_process) as Popen:
             mock_env = {'ENV_VAR': 'VAL'}
             test = XCToolTest(None, None, None, None, env=mock_env)

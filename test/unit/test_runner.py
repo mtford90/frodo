@@ -1,6 +1,6 @@
 import unittest
 
-from mock import MagicMock, NonCallableMock, Mock
+from mock import NonCallableMock, Mock
 
 from runner.runner import Runner
 
@@ -17,7 +17,7 @@ class TestRunner(unittest.TestCase):
         test_2 = NonCallableMock(spec_set=['name', 'run'], name='test_2', run=Mock())
         configuration = NonCallableMock(spec_set=['tests'], tests={test_1.name: test_1, test_2.name: test_2})
         runner = Runner(configuration)
-        mock_reporter = NonCallableMock(spec_set=['report'], report=MagicMock())
+        mock_reporter = NonCallableMock(spec_set=['report'], report=Mock())
         runner._get_reporter = Mock(return_value=mock_reporter)
         runner.run()
         test_1.run.assert_called_once_with()

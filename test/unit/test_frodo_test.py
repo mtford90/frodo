@@ -1,14 +1,9 @@
 import os
 import unittest
 
-from mock import MagicMock, call, Mock, NonCallableMock, patch
+from mock import  call, Mock, NonCallableMock, patch
 
-from configuration import Configuration
-from runner.frodo_env import FrodoEnv
-from runner import frodo_precondition
 from runner.frodo_test import FrodoTest
-from runner.xctool_config import XCToolConfig
-from runner.xctool_test import XCToolTest
 
 
 def mock_precond(name, succeeded):

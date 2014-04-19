@@ -1,6 +1,6 @@
 import unittest
 
-from mock import MagicMock, NonCallableMock
+from mock import NonCallableMock
 
 from runner.frodo_base import FrodoBase
 
