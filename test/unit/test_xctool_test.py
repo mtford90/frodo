@@ -41,12 +41,13 @@ class TestXCCoolTestOnlyParam(unittest.TestCase):
 
 # noinspection PyProtectedMember
 class XCToolTestExecute(unittest.TestCase):
-    def test_io(self):
-        test = XCToolTest(None, None, None, None)
-        stdout, stderr, return_code = test._execute("echo 'hello stderr' >&2; echo 'hello stdout'; False")
-        self.assertIn('hello stderr', stderr)
-        self.assertIn('hello stdout', stdout)
-        self.assertEqual(1, return_code)
+    # TODO: Move this into an integration test
+    # def test_io(self):
+    #     test = XCToolTest(None, None, None, None)
+    #     stdout, stderr, return_code = test._execute("echo 'hello stderr' >&2; echo 'hello stdout'; False")
+    #     self.assertIn('hello stderr', stderr)
+    #     self.assertIn('hello stdout', stdout)
+    #     self.assertEqual(1, return_code)
 
     def test_env(self):
         """all subprocesses should use 'env' parameter passed via constructor"""
