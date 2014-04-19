@@ -1,6 +1,6 @@
 import unittest
 
-from mock import MagicMock
+from mock import MagicMock, NonCallableMock
 
 from runner.frodo_base import FrodoBase
 
@@ -15,7 +15,7 @@ class TestFrodoBase(unittest.TestCase):
         pass
 
     def test_init(self):
-        configuration = MagicMock()
+        configuration = NonCallableMock(spec_set=[])
         aname = 'aname'
         concrete = ConcreteFrodoBase(aname, configuration, test=5)
         self.assertEqual(concrete.configuration, configuration)
@@ -23,7 +23,7 @@ class TestFrodoBase(unittest.TestCase):
         self.assertDictEqual({'test': 5}, concrete._kwargs)
 
     def test_validate_when_all_missing(self):
-        configuration = MagicMock()
+        configuration = NonCallableMock(spec_set=[])
         aname = 'aname'
         concrete = ConcreteFrodoBase(aname, configuration)
         errors = concrete.validate()
@@ -31,7 +31,7 @@ class TestFrodoBase(unittest.TestCase):
         self.assertSetEqual(set(errors.keys()), set(ConcreteFrodoBase.required_attr))
 
     def test_validate_when_one_missing(self):
-        configuration = MagicMock()
+        configuration = NonCallableMock(spec_set=[])
         aname = 'aname'
         concrete = ConcreteFrodoBase(aname, configuration, attr1=5)
         errors = concrete.validate()
@@ -39,14 +39,14 @@ class TestFrodoBase(unittest.TestCase):
         self.assertSetEqual(set(errors.keys()), set(ConcreteFrodoBase.required_attr) - {'attr1'})
 
     def test_validate_when_none_missing(self):
-        configuration = MagicMock()
+        configuration = NonCallableMock(spec_set=[])
         aname = 'aname'
         concrete = ConcreteFrodoBase(aname, configuration, attr1=5, attr2=6)
         errors = concrete.validate()
         self.assertFalse(errors)
 
     def test_as_dict(self):
-        configuration = MagicMock()
+        configuration = NonCallableMock(spec_set=[])
         aname = 'aname'
         concrete = ConcreteFrodoBase(aname, configuration, attr1=5, attr2=6)
         self.assertDictEqual({'attr1': 5, 'attr2': 6}, concrete.as_dict())

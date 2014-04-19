@@ -1,7 +1,6 @@
 import unittest
-import subprocess
 
-from mock import MagicMock
+from mock import MagicMock, patch, Mock, NonCallableMock
 
 from runner.xctool_test import XCToolTest, XCToolError, BuildError, RunError
 
@@ -54,22 +53,15 @@ class XCToolTestExecute(unittest.TestCase):
         mock_process = MagicMock()
         mock_process.communicate = MagicMock(return_value=('', ''))
         mock_process.return_code = 0
-        mock_Popen = MagicMock(return_value=mock_process)
-        stashed_Popen = subprocess.Popen
-        subprocess.Popen = mock_Popen
-        mock_env = {'ENV_VAR': 'VAL'}
-        test = XCToolTest(None, None, None, None, env=mock_env)
-        test._execute('True')
-        try:
-            self.assertTrue(mock_Popen.call_count)
-            for args, kwargs in mock_Popen.call_args_list:
+        with patch('subprocess.Popen', return_value=mock_process) as Popen:
+            mock_env = {'ENV_VAR': 'VAL'}
+            test = XCToolTest(None, None, None, None, env=mock_env)
+            test._execute('True')
+            self.assertTrue(Popen.call_count)
+            for args, kwargs in Popen.call_args_list:
                 env = kwargs.get('env', None)
                 self.assertTrue(env)
                 self.assertDictEqual(env, mock_env)
-        except AssertionError:
-            raise
-        finally:
-            subprocess.Popen = stashed_Popen
 
 
 # noinspection PyProtectedMember
@@ -95,44 +87,33 @@ class XCToolTestBuildCommand(unittest.TestCase):
     def test_scheme(self):
         self.assertIn(self.scheme, self.cmd)
 
-    # def test_target(self):
-    #     self.assertIn(self.target, self.cmd)
-
-    # def test_test_method(self):
-    #     self.assertIn(self.test_method, self.cmd)
-    #
-    # def test_test_class(self):
-    #     self.assertIn(self.test_class, self.cmd)
-
 
 # noinspection PyProtectedMember
 class XCToolTestBuild(unittest.TestCase):
     def test_build_success(self):
         test = XCToolTest(None, None, None, None)
-        test._execute = MagicMock(return_value=('', '', 0))
+        test._execute = Mock(return_value=('', '', 0))
         test._build()
 
     def test_build_failure(self):
         test = XCToolTest(None, None, None, None)
-        test._execute = MagicMock(return_value=('', '', 1))
+        test._execute = Mock(return_value=('', '', 1))
         self.assertRaises(BuildError, test._build)
 
 
 class XCToolTestRun(unittest.TestCase):
     def test_run_if_build_fails(self):
         test = XCToolTest(None, None, None, None)
-        test._build = MagicMock(side_effect=BuildError)
+        test._build = Mock(side_effect=BuildError)
         self.assertRaises(BuildError, test.run)
 
     def _test_run_success(self, code):
         test = XCToolTest(None, None, None, None)
-        test._execute = MagicMock(return_value=('', '', code))
-        test._build = MagicMock()
-        mock_parser = MagicMock()
-        dummy_tests = ['dummy', 'test', 'results']
-        mock_parser.tests = dummy_tests
-        test._get_parser = MagicMock(return_value=mock_parser)
-        self.assertEqual(dummy_tests, test.run())
+        test._execute = Mock(return_value=('', '', code))
+        test._build = Mock()
+        mock_parser = NonCallableMock(spec_set=['tests', 'parse'], tests=['dummy', 'test', 'results'])
+        test._get_parser = Mock(return_value=mock_parser)
+        self.assertEqual(mock_parser.tests, test.run())
 
     def test_run_success(self):
         """should parse stdout and return the test objects"""
@@ -143,7 +124,7 @@ class XCToolTestRun(unittest.TestCase):
 
     def test_run_failure(self):
         test = XCToolTest(None, None, None, None)
-        test._execute = MagicMock(return_value=('', '', 2))
-        test._build = MagicMock()
+        test._execute = Mock(return_value=('', '', 2))
+        test._build = Mock(return_value=None)
         self.assertRaises(RunError, test.run)
 
