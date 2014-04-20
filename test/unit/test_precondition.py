@@ -1,16 +1,34 @@
 import unittest
 
-from mock import NonCallableMock
+from mock import NonCallableMock, patch, Mock
 
-from runner.frodo_env import FrodoEnv
 from runner.frodo_precondition import FrodoPrecondition
 
 
 class TestPreconditionRun(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.patcher = patch('subprocess.Popen',
+                            new_callable=Mock,
+                            spec_set=['communicate', 'returncode'],
+                            communicate=Mock(return_value=('out', 'err')),
+                            returncode=0)
+        cls.patcher.start()
+
+    def subprocessesFail(self):
+        self._changeProcessReturnCode(1)
+
+    def _changeProcessReturnCode(self, returncode):
+        self.patcher.stop()
+        self.patcher.kwargs['returncode'] = returncode
+        self.patcher.start()
+
+    def subprocessesSuceed(self):
+        self._changeProcessReturnCode(0)
 
     def test_init(self):
-        cmd = 'True'
         configuration = NonCallableMock(spec_set=[])
+        cmd = NonCallableMock(spec_set=[])
         precon = FrodoPrecondition('name', configuration, cmd=cmd)
         self.assertEqual(precon.code, None)
         self.assertEqual(precon.stdout, None)
@@ -20,32 +38,30 @@ class TestPreconditionRun(unittest.TestCase):
         self.assertEqual(precon.cmd, cmd)
 
     def test_simple_success(self):
-        cmd = 'True'
+        self.subprocessesSuceed()
         configuration = NonCallableMock(spec_set=[])
-        precon = FrodoPrecondition('name', configuration, cmd=cmd)
+        precon = FrodoPrecondition('name', configuration, cmd=NonCallableMock(spec_set=[]))
         precon.run()
         self.assertTrue(precon.executed)
         self.assertTrue(precon.succeeded)
 
     def test_simple_failure(self):
-        cmd = 'False'
+        self.subprocessesFail()
         configuration = NonCallableMock(spec_set=[])
-        precon = FrodoPrecondition('name', configuration, cmd=cmd)
+        precon = FrodoPrecondition('name', configuration, cmd=NonCallableMock(spec_set=[]))
         precon.run()
         self.assertTrue(precon.executed)
         self.assertFalse(precon.succeeded)
 
     def test_run_twice_should_raise_exception(self):
-        cmd = 'False'
         configuration = NonCallableMock(spec_set=[])
-        precon = FrodoPrecondition('name', configuration, cmd=cmd)
+        precon = FrodoPrecondition('name', configuration, cmd=NonCallableMock(spec_set=[]))
         precon.run()
         self.assertRaises(AssertionError, precon.run)
 
     def test_validate_success(self):
-        cmd = 'False'
         configuration = NonCallableMock(spec_set=[])
-        precon = FrodoPrecondition('name', configuration, cmd=cmd)
+        precon = FrodoPrecondition('name', configuration, cmd=NonCallableMock(spec_set=[]))
         self.assertFalse(precon.validate())
 
     def test_validate_failure(self):
@@ -55,52 +71,45 @@ class TestPreconditionRun(unittest.TestCase):
         self.assertTrue(precon.validate())
 
     def test_stdout(self):
-        cmd = "echo 'hello'"
         configuration = NonCallableMock(spec_set=[])
-        precon = FrodoPrecondition('name', configuration, cmd=cmd)
+        precon = FrodoPrecondition('name', configuration, cmd=NonCallableMock(spec_set=[]))
         precon.run()
         self.assertTrue(precon.stdout)
-        self.assertIn('hello', precon.stdout)
+        self.assertIn('out', precon.stdout)
 
     def test_stderr(self):
-        cmd = "echo hello >&2"
         configuration = NonCallableMock(spec_set=[])
-        precon = FrodoPrecondition('name', configuration, cmd=cmd)
+        precon = FrodoPrecondition('name', configuration, cmd=NonCallableMock(spec_set=[]))
         precon.run()
         self.assertTrue(precon.stderr)
-        self.assertIn('hello', precon.stderr)
-
-    def test_stdout_and_stderr(self):
-        cmd = "echo hello >&2; echo blah"
-        configuration = NonCallableMock(spec_set=[])
-        precon = FrodoPrecondition('name', configuration, cmd=cmd)
-        precon.run()
-        self.assertTrue(precon.stderr)
-        self.assertIn('hello', precon.stderr)
-        self.assertTrue(precon.stdout)
-        self.assertIn('blah', precon.stdout)
+        self.assertIn('err', precon.stderr)
 
 
 class TestPreconditionEnv(unittest.TestCase):
-
-    def test_env(self):
-        cmd = 'echo ${VAR}'
+    @patch('subprocess.Popen', new_callable=Mock, spec_set=['communicate', 'returncode'],
+           communicate=Mock(return_value=('out', 'err')), returncode=0)
+    def test_env(self, Popen):
         var_val = 'hello there!'
-        configuration = NonCallableMock(spec_set=[])
-        env = FrodoEnv('myenv', configuration, VAR=var_val)
-        precon = FrodoPrecondition('name', configuration, cmd=cmd, env=env)
+        env_dict = {'VAR': var_val}
+        env = Mock(spec_set=['as_dict'], as_dict=Mock(return_value=env_dict))
+        precon = FrodoPrecondition('name', NonCallableMock(spec_set=[]), cmd=NonCallableMock(spec_set=[]), env=env)
         precon.run()
-        self.assertIn(var_val, precon.stdout)
+        self.assertEqual(1, Popen.call_count)
+        args, kwargs = Popen.call_args
+        self.assertDictEqual(kwargs['env'], env_dict)
 
-    def test_resolve_success(self):
+
+    @patch('subprocess.Popen')  # Ensure never called
+    def test_resolve_success(self, _):
         env_name = 'myenv'
         mock_env = NonCallableMock(spec_set=[])
         config = NonCallableMock(spec_set=['environs'], environs={env_name: mock_env})
-        precon = FrodoPrecondition('name', config, cmd='True', env=env_name)
+        precon = FrodoPrecondition('name', config, cmd=NonCallableMock(spec_set=[]), env=env_name)
         self.assertFalse(precon.resolve())
         self.assertEqual(precon.env, mock_env)
 
-    def test_resolve_failure(self):
+    @patch('subprocess.Popen')  # Ensure never called
+    def test_resolve_failure(self, _):
         config = NonCallableMock(spec_set=['environs'], environs={})
-        precon = FrodoPrecondition('name', config, cmd='True', env='myenv')
+        precon = FrodoPrecondition('name', config, cmd=NonCallableMock(spec_set=[]), env='myenv')
         self.assertTrue(precon.resolve())
